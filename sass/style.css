@@ -10,7 +10,6 @@ body {
   text-transform: uppercase; }
 
 .home {
-  display: flex;
   width: 70%;
   height: 77%;
   margin: auto;
@@ -110,7 +109,8 @@ body {
   z-index: 10;
   position: relative;
   top: 0px;
-  left: 65px; }
+  right: -70px;
+  float: right; }
   .menu-button:before, .menu-button:after {
     content: "";
     display: block;
