@@ -1,0 +1,43 @@
+.menu-button {
+	width: 42px;
+	height: 40px;
+	border-radius: 50%;
+	border: 2px solid black;
+	transition: 0.5s;
+	background: transparent;
+	z-index: 10;
+	position: relative;
+	top: 0px;
+	left: 65px;
+
+	&:before, &:after {
+		content: "";
+		display: block;
+		background: black;
+		position: absolute;
+	}
+
+	&:before {
+		width: 2px;
+		height: 30px;
+		top: 5px;
+		left: 19px;
+	}
+
+	&:after {
+		width: 30px;
+		height: 2px;
+		bottom: 19px;
+		left: 5px;
+	}
+
+	&.open {
+		border: 2px solid white;
+		background: transparent;
+		transform: rotate(225deg);
+
+		&:before, &:after {
+			background: white;
+		}
+	}
+}

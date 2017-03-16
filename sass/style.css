@@ -1,0 +1,130 @@
+@font-face {
+  font-family: Zorus_Serif_Italic;
+  src: url(fonts/Zorus_Serif_Italic.otf); }
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: Zorus_Serif_Italic;
+  text-transform: uppercase;
+  display: flex; }
+
+.home {
+  display: flex;
+  width: 70%;
+  height: 77%;
+  margin: auto;
+  background: url(../pictures/background.jpg);
+  background-size: cover;
+  background-position: center;
+  -webkit-box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.25); }
+
+.title {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  margin-top: 50vh;
+  transform: translateY(-50%); }
+  .title h1 {
+    background: url(../pictures/mask.jpg);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-size: cover;
+    background-position: center;
+    -webkit-transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    font-size: 210px;
+    font-weight: normal;
+    letter-spacing: 9px;
+    line-height: 204px; }
+  .title .shadow {
+    position: relative;
+    top: -398px;
+    left: 22px;
+    width: 434px; }
+
+.menu {
+  z-index: 1;
+  transition: 0.5s ease;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0; }
+  .menu .wrapper {
+    margin: 7% 14%;
+    height: 68%;
+    padding-top: 45px; }
+    .menu .wrapper ul {
+      text-align: center;
+      width: 46%; }
+      .menu .wrapper ul.col1 {
+        float: left;
+        padding-left: 4%; }
+      .menu .wrapper ul.col2 {
+        float: right;
+        padding-right: 4%; }
+      .menu .wrapper ul li {
+        padding-top: 60px;
+        letter-spacing: 0.4vw;
+        font-size: 30px;
+        list-style: none; }
+        .menu .wrapper ul li a {
+          text-decoration: none;
+          color: white;
+          display: inline-block; }
+          .menu .wrapper ul li a:after {
+            margin-top: 7px;
+            content: '';
+            display: block;
+            height: 3px;
+            width: 25px;
+            background: white;
+            transition: width .3s ease; }
+          .menu .wrapper ul li a:hover:after {
+            width: 100%;
+            color: white; }
+  .menu.open {
+    background: rgba(0, 0, 0, 0.5);
+    visibility: visible;
+    opacity: 1; }
+
+.menu-button {
+  width: 42px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid black;
+  transition: 0.5s;
+  background: transparent;
+  z-index: 10;
+  position: relative;
+  top: 0px;
+  left: 65px; }
+  .menu-button:before, .menu-button:after {
+    content: "";
+    display: block;
+    background: black;
+    position: absolute; }
+  .menu-button:before {
+    width: 2px;
+    height: 30px;
+    top: 5px;
+    left: 19px; }
+  .menu-button:after {
+    width: 30px;
+    height: 2px;
+    bottom: 19px;
+    left: 5px; }
+  .menu-button.open {
+    border: 2px solid white;
+    background: transparent;
+    transform: rotate(225deg); }
+    .menu-button.open:before, .menu-button.open:after {
+      background: white; }
+
+/*# sourceMappingURL=style.css.map */

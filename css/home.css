@@ -1,0 +1,37 @@
+.home {
+  display: flex;
+  width: 70%;
+  height: 77%;
+  margin: auto;
+  background: url(../pictures/background.jpg);
+  background-size: cover;
+  background-position: center;
+  -webkit-box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.25); }
+
+.title {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  margin-top: 50vh;
+  transform: translateY(-50%); }
+  .title h1 {
+    background: url(../pictures/mask.jpg);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-size: cover;
+    background-position: center;
+    -webkit-transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    font-size: 210px;
+    font-weight: normal;
+    letter-spacing: 9px;
+    line-height: 204px; }
+  .title .shadow {
+    position: relative;
+    top: -398px;
+    left: 22px;
+    width: 434px; }
+
+/*# sourceMappingURL=home.css.map */
