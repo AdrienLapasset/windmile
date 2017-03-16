@@ -123,7 +123,8 @@
   position: relative;
   top: 0px;
   right: -70px;
-  float: right; }
+  float: right;
+  cursor: pointer; }
   .menu-button:before, .menu-button:after {
     content: "";
     display: block;
