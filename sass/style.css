@@ -1,6 +1,6 @@
 @font-face {
   font-family: Zorus_Serif_Italic;
-  src: url(fonts/Zorus_Serif_Italic.otf); }
+  src: url("../fonts/Zorus_Serif_Italic.otf"); }
 * {
   margin: 0;
   padding: 0; }
@@ -15,7 +15,7 @@ body {
   width: 70%;
   height: 77%;
   margin: auto;
-  background: url(../pictures/background.jpg);
+  background: url("../pictures/background.jpg");
   background-size: cover;
   background-position: center;
   -webkit-box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.25);
@@ -29,7 +29,7 @@ body {
   margin-top: 50vh;
   transform: translateY(-50%); }
   .title h1 {
-    background: url(../pictures/mask.jpg);
+    background: url("../pictures/mask.jpg");
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-size: cover;

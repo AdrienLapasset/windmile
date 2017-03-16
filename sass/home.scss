@@ -3,7 +3,7 @@
 	width: 70%;
 	height: 77%;
 	margin: auto;
-	background: url(../pictures/background.jpg);
+	background: url('../pictures/background.jpg');
 	background-size: cover;
 	background-position: center;
 	-webkit-box-shadow: -2px 2px 5px 0px rgba(0,0,0,0.25);
@@ -19,7 +19,7 @@
 	transform: translateY(-50%);
 
 	h1 {
-		background: url(../pictures/mask.jpg);
+		background: url('../pictures/mask.jpg');
 		-webkit-text-fill-color: transparent;
 		-webkit-background-clip: text;
 		background-size: cover;
