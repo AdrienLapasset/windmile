@@ -1,19 +1,3 @@
-@font-face {
-  font-family: Zorus_Serif_Italic;
-  src: url("../fonts/Zorus_Serif_Italic.otf"); }
-* {
-  margin: 0;
-  padding: 0; }
-
-body {
-  font-family: Zorus_Serif_Italic;
-  text-transform: uppercase; }
-
-a {
-  text-decoration: none;
-  color: white;
-  display: inline-block; }
-
 .home {
   width: 70%;
   height: 77%;
@@ -96,6 +80,10 @@ a {
           .menu .wrapper ul li a:hover:after {
             width: 100%;
             color: white; }
+  .menu.open {
+    background: rgba(0, 0, 0, 0.5);
+    visibility: visible;
+    opacity: 1; }
   .menu .contact {
     position: absolute;
     bottom: 4%;
@@ -104,6 +92,7 @@ a {
       position: relative;
       left: -50%;
       font-family: 'Nunito Sans', sans-serif;
+      font-weight: 800;
       letter-spacing: 5px;
       font-size: 14px; }
       .menu .contact a .material-icons {
@@ -111,11 +100,18 @@ a {
         top: 6px;
         left: -12px;
         font-size: 22px; }
-  .menu.open {
-    background: rgba(0, 0, 0, 0.5);
-    visibility: visible;
-    opacity: 1; }
-
+  .menu .credits {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 200;
+    text-transform: none;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -75px;
+    bottom: 107px;
+    font-size: 11px; }
+@-moz-document url-prefix() {
+  .menu .credits {
+    left: -86px; } }
 .menu-button {
   width: 42px;
   height: 40px;
@@ -149,5 +145,21 @@ a {
     transform: rotate(225deg); }
     .menu-button.open:before, .menu-button.open:after {
       background: white; }
+
+@font-face {
+  font-family: Zorus_Serif_Italic;
+  src: url("../fonts/Zorus_Serif_Italic.otf"); }
+* {
+  margin: 0;
+  padding: 0;
+  color: white; }
+
+body {
+  font-family: Zorus_Serif_Italic;
+  text-transform: uppercase; }
+
+a {
+  text-decoration: none;
+  display: inline-block; }
 
 /*# sourceMappingURL=style.css.map */

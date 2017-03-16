@@ -1,3 +1,7 @@
+@import "home";
+@import "menu";
+@import "menu-button";
+
 @font-face {
 	font-family: Zorus_Serif_Italic;
 	src: url('../fonts/Zorus_Serif_Italic.otf');
@@ -6,6 +10,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	color: white;
 }
 
 body {
@@ -15,12 +20,7 @@ body {
 
 a {
 	text-decoration: none;
-	color: white;
 	display: inline-block;
 }
-
-@import "home";
-@import "menu";
-@import "menu-button";
 
 

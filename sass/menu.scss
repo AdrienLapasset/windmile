@@ -55,6 +55,12 @@
 		}
 	}
 
+	&.open {
+		background: rgba(0,0,0,0.5);
+		visibility: visible;
+		opacity: 1;
+	}
+
 	.contact {
 		position: absolute;
 		bottom: 4%;
@@ -64,6 +70,7 @@
 			position: relative;
 			left: -50%;
 			font-family: 'Nunito Sans', sans-serif;
+			font-weight: 800;
 			letter-spacing: 5px;
 			font-size: 14px;
 
@@ -76,9 +83,18 @@
 		}
 	}
 
-	&.open {
-		background: rgba(0,0,0,0.5);
-		visibility: visible;
-		opacity: 1;
+	.credits {
+		font-family: 'Nunito Sans', sans-serif;
+		font-weight: 200;
+		text-transform: none;
+		transform: rotate(-90deg);
+		position: absolute;
+		left: -75px;
+		bottom: 107px;
+		font-size: 11px;
+
+		@-moz-document url-prefix() {
+			left: -86px; 
+		}
 	}
 }	
