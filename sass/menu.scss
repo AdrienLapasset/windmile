@@ -29,15 +29,12 @@
 			}
 
 			li {
-				padding-top: 60px;
-				letter-spacing: 0.4vw;
-				font-size: 30px;
+				padding-top: 91px;
+				font-size: 25px;
 				list-style: none;
 
 				a {
-					text-decoration: none;
-					color: white;
-					display: inline-block;
+					letter-spacing: 4px;
 
 					&:after {
 						margin-top: 7px;
@@ -54,6 +51,27 @@
 						color: rgba(255,255,255,1);
 					}
 				}
+			}
+		}
+	}
+
+	.contact {
+		position: absolute;
+		bottom: 4%;
+		left: 50%;
+
+		a {
+			position: relative;
+			left: -50%;
+			font-family: 'Nunito Sans', sans-serif;
+			letter-spacing: 5px;
+			font-size: 14px;
+
+			.material-icons {
+				position: relative;
+				top: 6px;
+				left: -12px;
+				font-size: 22px;
 			}
 		}
 	}

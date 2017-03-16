@@ -9,6 +9,11 @@ body {
   font-family: Zorus_Serif_Italic;
   text-transform: uppercase; }
 
+a {
+  text-decoration: none;
+  color: white;
+  display: inline-block; }
+
 .home {
   width: 70%;
   height: 77%;
@@ -75,14 +80,11 @@ body {
         float: right;
         padding-right: 4%; }
       .menu .wrapper ul li {
-        padding-top: 60px;
-        letter-spacing: 0.4vw;
-        font-size: 30px;
+        padding-top: 91px;
+        font-size: 25px;
         list-style: none; }
         .menu .wrapper ul li a {
-          text-decoration: none;
-          color: white;
-          display: inline-block; }
+          letter-spacing: 4px; }
           .menu .wrapper ul li a:after {
             margin-top: 7px;
             content: '';
@@ -94,6 +96,21 @@ body {
           .menu .wrapper ul li a:hover:after {
             width: 100%;
             color: white; }
+  .menu .contact {
+    position: absolute;
+    bottom: 4%;
+    left: 50%; }
+    .menu .contact a {
+      position: relative;
+      left: -50%;
+      font-family: 'Nunito Sans', sans-serif;
+      letter-spacing: 5px;
+      font-size: 14px; }
+      .menu .contact a .material-icons {
+        position: relative;
+        top: 6px;
+        left: -12px;
+        font-size: 22px; }
   .menu.open {
     background: rgba(0, 0, 0, 0.5);
     visibility: visible;
