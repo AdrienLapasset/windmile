@@ -3,6 +3,8 @@
 	width: 70%;
 	height: 77%;
 	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
 	background: url('../pictures/background.jpg');
 	background-size: cover;
 	background-position: center;
@@ -37,5 +39,10 @@
 		top: -398px;
 		left: 22px;
 		width: 434px;
+
+		// Firefox exception
+		@-moz-document url-prefix() {
+			top: -414px; 
+		}
 	}
 }

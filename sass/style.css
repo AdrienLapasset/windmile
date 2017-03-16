@@ -7,14 +7,18 @@
 
 body {
   font-family: Zorus_Serif_Italic;
-  text-transform: uppercase;
-  display: flex; }
+  text-transform: uppercase; }
 
 .home {
   display: flex;
   width: 70%;
   height: 77%;
   margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   background: url("../pictures/background.jpg");
   background-size: cover;
   background-position: center;
@@ -45,7 +49,9 @@ body {
     top: -398px;
     left: 22px;
     width: 434px; }
-
+@-moz-document url-prefix() {
+  .title .shadow {
+    top: -414px; } }
 .menu {
   z-index: 1;
   transition: 0.5s ease;
