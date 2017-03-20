@@ -1,3 +1,14 @@
+.intro-title {
+  text-align: center;
+  margin-top: 49vh;
+  transform: translateY(-50%); }
+  .intro-title p {
+    color: black;
+    font-size: 210px;
+    font-weight: normal;
+    letter-spacing: 9px;
+    line-height: 204px; }
+
 .home {
   width: 70%;
   height: 77%;
@@ -12,33 +23,33 @@
   background-position: center;
   -webkit-box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.25);
-  box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.25); }
-
-.title {
-  height: 100%;
-  width: 100%;
-  text-align: center;
-  margin-top: 50vh;
-  transform: translateY(-50%); }
-  .title h1 {
-    background: url("../pictures/mask.jpg");
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-size: cover;
-    background-position: center;
-    -webkit-transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
-    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
-    font-size: 210px;
-    font-weight: normal;
-    letter-spacing: 9px;
-    line-height: 204px; }
-  .title .shadow {
-    position: relative;
-    top: -398px;
-    left: 22px;
-    width: 434px; }
+  box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.25);
+  display: none; }
+  .home .title {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin-top: 50vh;
+    transform: translateY(-50%); }
+    .home .title h1 {
+      background: url("../pictures/mask.jpg");
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      background-size: cover;
+      background-position: center;
+      -webkit-transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+      transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+      font-size: 210px;
+      font-weight: normal;
+      letter-spacing: 9px;
+      line-height: 204px; }
+    .home .title .shadow {
+      position: relative;
+      top: -398px;
+      left: 22px;
+      width: 434px; }
 @-moz-document url-prefix() {
-  .title .shadow {
+  .home .title .shadow {
     top: -414px; } }
 .menu {
   z-index: 1;
@@ -51,7 +62,7 @@
   visibility: hidden;
   opacity: 0; }
   .menu .wrapper {
-    margin: 7% 14%;
+    margin: 4% 14%;
     height: 68%;
     padding-top: 45px; }
     .menu .wrapper ul {

@@ -1,3 +1,17 @@
+.intro-title {
+	text-align: center;
+	margin-top: 49vh;
+	transform: translateY(-50%);
+
+	p {
+		color: black;
+		font-size: 210px;
+		font-weight: normal;
+		letter-spacing: 9px;
+		line-height: 204px;
+	}
+}
+
 .home {
 	width: 70%;
 	height: 77%;
@@ -10,38 +24,39 @@
 	-webkit-box-shadow: -2px 2px 5px 0px rgba(0,0,0,0.25);
 	-moz-box-shadow: -2px 2px 5px 0px rgba(0,0,0,0.25);
 	box-shadow: -2px 2px 5px 0px rgba(0,0,0,0.25);
-}
+	display: none;
 
-.title {
-	height: 100%;
-	width: 100%;
-	text-align: center;
-	margin-top: 50vh;
-	transform: translateY(-50%);
+	.title {
+		height: 100%;
+		width: 100%;
+		text-align: center;
+		margin-top: 50vh;
+		transform: translateY(-50%);
 
-	h1 {
-		background: url('../pictures/mask.jpg');
-		-webkit-text-fill-color: transparent;
-		-webkit-background-clip: text;
-		background-size: cover;
-		background-position: center;
-		-webkit-transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
-		transition:         all 2s cubic-bezier(0.075, 0.82, 0.165, 1);	
-		font-size: 210px;
-		font-weight: normal;
-		letter-spacing: 9px;
-		line-height: 204px;
-	}
+		h1 {
+			background: url('../pictures/mask.jpg');
+			-webkit-text-fill-color: transparent;
+			-webkit-background-clip: text;
+			background-size: cover;
+			background-position: center;
+			-webkit-transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+			transition:         all 2s cubic-bezier(0.075, 0.82, 0.165, 1);	
+			font-size: 210px;
+			font-weight: normal;
+			letter-spacing: 9px;
+			line-height: 204px;
+		}
 
-	.shadow {
-		position: relative;
-		top: -398px;
-		left: 22px;
-		width: 434px;
+		.shadow {
+			position: relative;
+			top: -398px;
+			left: 22px;
+			width: 434px;
 
 		// Firefox exception
 		@-moz-document url-prefix() {
 			top: -414px; 
 		}
 	}
+}
 }
