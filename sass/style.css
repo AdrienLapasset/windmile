@@ -101,14 +101,14 @@
     text-transform: none;
     transform: rotate(-90deg);
     position: absolute;
-    left: -75px;
+    left: -90px;
     bottom: 107px;
     font-size: 11px; }
 @-moz-document url-prefix() {
   .menu .credits {
     left: -86px; } }
 .menu-button {
-  width: 42px;
+  width: 40px;
   height: 40px;
   border-radius: 50%;
   border: 2px solid black;
@@ -141,6 +141,25 @@
     transform: rotate(225deg); }
     .menu-button.open:before, .menu-button.open:after {
       background: white; }
+
+.underline {
+  position: relative; }
+
+.underline span {
+  pointer-events: none; }
+
+.underline canvas {
+  pointer-events: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*background-color: rgba(222, 222, 222, 0.1);*/
+  /*z-index: -1;*/
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  cursor: pointer; }
 
 @font-face {
   font-family: Zorus_Serif_Italic;
