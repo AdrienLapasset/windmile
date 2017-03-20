@@ -66,7 +66,7 @@ function SingleUnderline(element, underlineStyles, elementStyles) {
     // text-underline-position in ratio, todo: default and user set position ratio
     if (this.underlineStyles['text-underline-position'] == "auto") {
         // if set to auto, calculate the optimized width based on font
-        // console.log(this.elementStyles.baselinePositionRatio);
+        //console.log(this.elementStyles.baselinePositionRatio);
         this.underlinePosition = parseFloat(this.elementStyles.height) * this.ratio 
                 * ( 1 - this.elementStyles.baselinePositionRatio + 
                     this.elementStyles.baselinePositionRatio * 0.4)
@@ -74,25 +74,26 @@ function SingleUnderline(element, underlineStyles, elementStyles) {
     } else {
         //if set to ratio value, todo: other unit such as em, px?
         var userUnderlinePosition = parseFloat(this.underlineStyles['text-underline-position']);
-        // console.log(this.elementStyles.baselinePositionRatio);
-        this.underlinePosition = parseFloat(this.elementStyles.height) * this.ratio * 
-                ( 1 - this.elementStyles.baselinePositionRatio + 
-                    this.elementStyles.baselinePositionRatio * userUnderlinePosition)
-                + this.strokeWidth/2;
+        //console.log(this.elementStyles.baselinePositionRatio);
+        // this.underlinePosition = parseFloat(this.elementStyles.height) * this.ratio * 
+        //         ( 1 - this.elementStyles.baselinePositionRatio + 
+        //             this.elementStyles.baselinePositionRatio * userUnderlinePosition)
+        //         + this.strokeWidth/2;
+        this.underlinePosition = 55;
     }
 
     var adjustValue = optimalStrokeWidthPos(this.strokeWidth, this.underlinePosition);
     this.strokeWidth = adjustValue.strokeWidth;
     this.underlinePosition = adjustValue.posY;
-
+    // this.underlinePosition = 40;
     // todo: if last character is a space, remove the space
-    textWidth = this.ctx.measureText(this.text).width;
+    textWidth = this.ctx.measureText(this.text).width*1.5;
 
     this.myString = new GuitarString(this.ctx, 
         new Point(0, this.underlinePosition), 
         new Point(textWidth, this.underlinePosition), 
         this.strokeWidth, this.underlineStyles['text-underline-color'], this.ratio);
-    this.drawHoles();
+    // this.drawHoles();
 
 }
 
@@ -140,7 +141,7 @@ SingleUnderline.prototype.draw = function(){
     // draw
     if(this.redrawActive) {
         this.drawUnderline();
-        this.drawHoles();
+        // this.drawHoles();
     }
 };
 

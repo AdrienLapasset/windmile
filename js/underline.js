@@ -13,7 +13,7 @@ var getElementStyles = function(element){
             .getPropertyValue("font-style");
     var width = $this.getBoundingClientRect().width;
 
-    var height = $this.getBoundingClientRect().height;
+    var height = $this.getBoundingClientRect().height+20;
     var parentWidth = $this.parentNode.getBoundingClientRect().width;
 
 
@@ -54,7 +54,7 @@ window.onload = function() {
 
     	var underlineStyles = {
     		'text-underline-color': '#FFF',
-    		'text-underline-position': '-1', // could be ratio or todo: px 
+    		'text-underline-position': '-2', // could be ratio or todo: px 
     		'text-underline-skip': true,
     		'text-underline-width': '2px' // could be auto or px or ratio
     	}
