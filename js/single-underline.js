@@ -88,7 +88,7 @@ function SingleUnderline(element, underlineStyles, elementStyles) {
     this.underlinePosition = 57;
     // todo: if last character is a space, remove the space
     textWidth = this.ctx.measureText(this.text).width;
-    console.log(textWidth);
+    // console.log(textWidth);
     this.myString = new GuitarString(this.ctx, 
         new Point(0, this.underlinePosition), 
         new Point(textWidth * 1.8, this.underlinePosition), 
