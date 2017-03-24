@@ -77,12 +77,14 @@ window.onload = function() {
 
 
             // single line
-            var myUnderline = new SingleUnderline(element, underlineStyles, elementStyles);
+            var id = n+1;
+            var myUnderline = new SingleUnderline(element, underlineStyles, elementStyles, id);
             myUnderlines.push(myUnderline);
             
 
-		// if(window.device)
+    // if(window.device)
     }
+            // console.log(myUnderlines);
 }
 
 
@@ -110,7 +112,7 @@ function animate() {
 animate();
 
 //audio play multiple channels at the same time: http://www.storiesinflight.com/html5/audio.html
-var channel_max = 10; // number of channels
+var channel_max = 100; // number of channels
 audiochannels = new Array();
 for (a = 0; a < channel_max; a++) { // prepare the channels
     audiochannels[a] = new Array();

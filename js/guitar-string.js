@@ -59,7 +59,7 @@ var musicLevel = function(startPoint, endPoint, ratio){
     }
     return level;
 };
-function GuitarString(ctx, startPoint, endPoint, strokeWidth, strokeColor, ratio) {
+function GuitarString(ctx, startPoint, endPoint, strokeWidth, strokeColor, ratio, id) {
 	//ctor
     this.ctx = ctx;
     this.canvas = ctx.canvas;
@@ -68,7 +68,8 @@ function GuitarString(ctx, startPoint, endPoint, strokeWidth, strokeColor, ratio
     this.strokeWidth = strokeWidth;
     this.strokeColor = strokeColor;
     this.ratio = ratio;
-
+    this.id = id;
+// 
     this.level = musicLevel(this.startPoint, this.endPoint, this.ratio);
 
     // this.canvas.width = this.canvas.clientWidth;
@@ -201,7 +202,7 @@ GuitarString.prototype.mouseMove = function (self, event){
         this.waveInitX = (this.startPoint.x + this.endPoint.x)/2;
         this.waveInitY = this.endPoint.y + this.maxControlDistance;
         // play audio
-        play_multi_sound('audio' + this.level);
+        play_multi_sound('audio' + this.id);
         // createjs.Sound.play('cello_' + this.level);
 
     } 

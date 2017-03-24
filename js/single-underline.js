@@ -25,7 +25,7 @@ var optimalStrokeWidthPos = function(strokeWidth, posY){
     }
 }
 
-function SingleUnderline(element, underlineStyles, elementStyles) {
+function SingleUnderline(element, underlineStyles, elementStyles, id) {
     //ctor
     this.element = element;
 
@@ -34,6 +34,9 @@ function SingleUnderline(element, underlineStyles, elementStyles) {
     this.underlineStyles = underlineStyles;
 
     this.elementStyles = elementStyles;
+
+    this.id = id;
+
     this.redrawActive = false;
 
     this.canvas = document.createElement("canvas");
@@ -88,13 +91,11 @@ function SingleUnderline(element, underlineStyles, elementStyles) {
     this.underlinePosition = 57;
     // todo: if last character is a space, remove the space
     textWidth = this.ctx.measureText(this.text).width;
-    // console.log(textWidth);
     this.myString = new GuitarString(this.ctx, 
         new Point(0, this.underlinePosition), 
         new Point(textWidth * 1.8, this.underlinePosition), 
-        this.strokeWidth, this.underlineStyles['text-underline-color'], this.ratio);
+        this.strokeWidth, this.underlineStyles['text-underline-color'], this.ratio, this.id);
     // this.drawHoles();
-
 }
 
 SingleUnderline.prototype.drawUnderline = function(){
