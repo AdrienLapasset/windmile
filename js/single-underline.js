@@ -70,10 +70,14 @@ function SingleUnderline(element, underlineStyles, elementStyles, id) {
     if (this.underlineStyles['text-underline-position'] == "auto") {
         // if set to auto, calculate the optimized width based on font
         //console.log(this.elementStyles.baselinePositionRatio);
-        this.underlinePosition = parseFloat(this.elementStyles.height) * this.ratio 
+        
+        this.underlinePosition = 0.6 * parseFloat(this.elementStyles.height) * this.ratio 
         * ( 1 - this.elementStyles.baselinePositionRatio + 
             this.elementStyles.baselinePositionRatio)
-        + this.strokeWidth/2 - 50;
+        + this.strokeWidth/2;
+
+        // this.underlinePosition = 50;
+
         console.log(this.underlinePosition);
 
     } else {
