@@ -75,11 +75,6 @@ function SingleUnderline(element, underlineStyles, elementStyles, id) {
         * ( 1 - this.elementStyles.baselinePositionRatio + 
             this.elementStyles.baselinePositionRatio)
         + this.strokeWidth/2;
-
-        // this.underlinePosition = 50;
-
-        console.log(this.underlinePosition);
-
     } else {
         //if set to ratio value, todo: other unit such as em, px?
         var userUnderlinePosition = parseFloat(this.underlineStyles['text-underline-position']);

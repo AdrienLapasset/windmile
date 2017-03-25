@@ -58,9 +58,10 @@
 			<p>Design and development : <a href="http://www.adrienlapasset.fr" target="_blank">Adrien Lapasset</a></p>
 		</div>
 	</div>
-	<!-- <div class="intro-title">
-		<p>Wind<br/>Mile</p>
-	</div> -->
+	<div class="intro">
+		<p class="W">W</p><p class="I1">i</p><p class="N">n</p><p class="D">d</p><br/>
+		<p class="M">M</p><p class="I2">i</p><p class="L">l</p><p class="E">e</p>
+	</div>
 	<div class="home">
 		<div class="menu-button"></div> 
 		<div class="title">
@@ -71,8 +72,26 @@
 </body>
 <script type="text/javascript">
 	$(document).ready(function() {
-		$('.intro-title').fadeOut(2000);
-		$('.home').fadeIn(2000); 
+		
+		// Intro //
+		showOneLetter();  
+		var i = 0;   
+		var letters = ['W','I1','N','D','M','I2','L','E'];
+		letters.sort(function(){return Math.round(Math.random());});                 
+		function showOneLetter() {
+			setTimeout(function () {
+				$('.' + letters[i]).fadeIn().css("color","black");
+				i++;                     
+				if (i < 8) {            
+					showOneLetter();              
+				} 
+				else {
+					$('.intro').fadeOut(1000, function(){
+						$('.home').fadeIn(2000); 
+					}); 
+				}             
+			}, 800);
+		}
 		
 		// Movable Background //
 		var mouseX;

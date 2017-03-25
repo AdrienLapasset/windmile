@@ -1,14 +1,15 @@
-.intro-title {
+.intro {
 	text-align: center;
 	margin-top: 49vh;
 	transform: translateY(-50%);
 
 	p {
-		color: black;
-		font-size: 210px;
+		color: white;
+		font-size: 80px;
 		font-weight: normal;
-		letter-spacing: 9px;
-		line-height: 204px;
+		letter-spacing: 2px;
+		display: inline-block;
+		transition: 1s ease;
 	}
 }
 
