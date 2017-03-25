@@ -43,14 +43,14 @@ function SingleUnderline(element, underlineStyles, elementStyles, id) {
     this.ctx = this.canvas.getContext('2d');
     
     this.ratio = window.devicePixelRatio;
-        this.canvas.width = this.elementStyles.width*this.ratio;
-        this.canvas.height = this.elementStyles.height*this.ratio;
-        this.element.appendChild(this.canvas);
-        this.canvas.style.width =  this.elementStyles.width + 'px';
+    this.canvas.width = this.elementStyles.width*this.ratio;
+    this.canvas.height = this.elementStyles.height*this.ratio;
+    this.element.appendChild(this.canvas);
+    this.canvas.style.width =  this.elementStyles.width + 'px';
 
-        this.ctx.font = this.font = this.elementStyles.fontStyle + ' ' 
-                        + multiplyValue(this.elementStyles.fontSize, this.ratio) + ' ' 
-                        + this.elementStyles.fontFamily;
+    this.ctx.font = this.font = this.elementStyles.fontStyle + ' ' 
+    + multiplyValue(this.elementStyles.fontSize, this.ratio) + ' ' 
+    + this.elementStyles.fontFamily;
 
     // determine the text-underline-width / strokeWidth
     var dotWidth = this.ctx.measureText('.')['width'];
@@ -71,24 +71,28 @@ function SingleUnderline(element, underlineStyles, elementStyles, id) {
         // if set to auto, calculate the optimized width based on font
         //console.log(this.elementStyles.baselinePositionRatio);
         this.underlinePosition = parseFloat(this.elementStyles.height) * this.ratio 
-                * ( 1 - this.elementStyles.baselinePositionRatio + 
-                    this.elementStyles.baselinePositionRatio * 0.4)
-                + this.strokeWidth/2;
+        * ( 1 - this.elementStyles.baselinePositionRatio + 
+            this.elementStyles.baselinePositionRatio)
+        + this.strokeWidth/2 - 50;
+        console.log(this.underlinePosition);
+
     } else {
         //if set to ratio value, todo: other unit such as em, px?
         var userUnderlinePosition = parseFloat(this.underlineStyles['text-underline-position']);
         //console.log(this.elementStyles.baselinePositionRatio);
         this.underlinePosition = parseFloat(this.elementStyles.height) * this.ratio * 
-                ( 1 - this.elementStyles.baselinePositionRatio + 
-                    this.elementStyles.baselinePositionRatio * userUnderlinePosition)
-                + this.strokeWidth/2;
-        // this.underlinePosition = 100;
+        ( 1 - this.elementStyles.baselinePositionRatio + 
+            this.elementStyles.baselinePositionRatio * userUnderlinePosition)
+        + this.strokeWidth/2;
     }
 
     var adjustValue = optimalStrokeWidthPos(this.strokeWidth, this.underlinePosition);
     this.strokeWidth = adjustValue.strokeWidth;
-    // this.underlinePosition = adjustValue.posY;
-    this.underlinePosition = 57;
+    this.underlinePosition = adjustValue.posY;
+
+    // this.underlinePosition = 57;
+    // this.underlinePosition = 30;
+
     // todo: if last character is a space, remove the space
     textWidth = this.ctx.measureText(this.text).width;
     this.myString = new GuitarString(this.ctx, 
