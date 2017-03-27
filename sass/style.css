@@ -1,14 +1,22 @@
 .intro {
   text-align: center;
-  margin-top: 49vh;
+  margin-top: 43vh;
   transform: translateY(-50%); }
   .intro p {
-    color: white;
+    color: black;
     font-size: 80px;
     font-weight: normal;
-    letter-spacing: 2px;
+    letter-spacing: 10px;
+    padding-right: 3px;
+    margin-bottom: 8px;
     display: inline-block;
-    transition: 1s ease; }
+    transition: opacity 1s ease;
+    opacity: 0; }
+    @media only screen and (max-width: 640px) {
+      .intro p {
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: 3px; } }
 
 .home {
   width: 70%;
@@ -45,6 +53,11 @@
       font-weight: normal;
       letter-spacing: 9px;
       line-height: 204px; }
+      @media only screen and (max-width: 640px) {
+        .home .title h1 {
+          font-size: 80px;
+          line-height: 80px;
+          letter-spacing: 5px; } }
     .home .title .shadow {
       position: relative;
       top: -398px;
@@ -53,6 +66,16 @@
 @-moz-document url-prefix() {
   .home .title .shadow {
     top: -414px; } }
+      @media only screen and (max-width: 640px) {
+        .home .title .shadow {
+          top: -156px;
+          left: 7px;
+          width: 171px; }
+        @-moz-document url-prefix() {
+          .home .title .shadow {
+            top: -162px;
+            left: 8px; } } }
+
 .menu {
   z-index: 1;
   transition: 0.5s ease;
@@ -62,7 +85,9 @@
   right: 0;
   position: absolute;
   visibility: hidden;
-  opacity: 0; }
+  opacity: 0;
+  width: 100%;
+  height: 100%; }
   .menu .wrapper {
     margin: 4% 14%;
     height: 68%;
@@ -73,16 +98,46 @@
       .menu .wrapper ul.col1 {
         float: left;
         padding-left: 4%; }
+        @media only screen and (max-width: 640px) {
+          .menu .wrapper ul.col1 {
+            float: none;
+            padding: 0; } }
       .menu .wrapper ul.col2 {
         float: right;
         padding-right: 4%; }
+        @media only screen and (max-width: 640px) {
+          .menu .wrapper ul.col2 {
+            float: none;
+            padding: 0; } }
       .menu .wrapper ul li {
         padding-top: 91px;
         font-size: 25px;
         list-style: none; }
+        @media only screen and (max-width: 640px) {
+          .menu .wrapper ul li {
+            font-size: 17px;
+            padding-top: 5vh; } }
         .menu .wrapper ul li a {
           letter-spacing: 4px;
           text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5); }
+          @media only screen and (max-width: 640px) {
+            .menu .wrapper ul li a:after {
+              margin-top: 5px;
+              content: '';
+              display: block;
+              height: 2px;
+              width: 25px;
+              background: white;
+              transition: width .3s ease; }
+            .menu .wrapper ul li a:hover:after {
+              width: 100%;
+              color: white; } }
+      @media only screen and (max-width: 640px) {
+        .menu .wrapper ul {
+          width: 100%; } }
+    @media only screen and (max-width: 640px) {
+      .menu .wrapper {
+        margin: 0% 14%; } }
   .menu.open {
     background: rgba(0, 0, 0, 0.5);
     visibility: visible;
@@ -105,9 +160,19 @@
         top: 6px;
         left: -12px;
         font-size: 22px; }
+        @media only screen and (max-width: 640px) {
+          .menu .contact a .material-icons {
+            font-size: 15px;
+            top: 4px;
+            left: -6px; } }
       .menu .contact a:hover {
         transform: translateY(1px);
         text-shadow: none; }
+      @media only screen and (max-width: 640px) {
+        .menu .contact a {
+          white-space: nowrap;
+          font-size: 9px;
+          letter-spacing: 3px; } }
   .menu .credits {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 200;
@@ -150,10 +215,13 @@
     left: 5px; }
   .menu-button.open {
     border: 2px solid white;
-    background: transparent;
     transform: rotate(225deg); }
     .menu-button.open:before, .menu-button.open:after {
       background: white; }
+  @media only screen and (max-width: 640px) {
+    .menu-button {
+      top: -22px;
+      right: -22px; } }
 
 .underline {
   position: relative; }
@@ -173,6 +241,9 @@
   -webkit-user-select: none;
   -o-user-select: none;
   cursor: pointer; }
+  @media only screen and (max-width: 640px) {
+    .underline canvas {
+      display: none; } }
 
 @font-face {
   font-family: Zorus_Serif_Italic;
@@ -181,6 +252,8 @@
   margin: 0;
   padding: 0;
   color: white; }
+  *:focus {
+    outline: none; }
 
 body {
   font-family: Zorus_Serif_Italic;

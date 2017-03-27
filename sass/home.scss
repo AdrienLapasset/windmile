@@ -1,15 +1,24 @@
 .intro {
 	text-align: center;
-	margin-top: 49vh;
+	margin-top: 43vh;
 	transform: translateY(-50%);
 
 	p {
-		color: white;
+		color: black;
 		font-size: 80px;
 		font-weight: normal;
-		letter-spacing: 2px;
+		letter-spacing: 10px;
+		padding-right: 3px;
+		margin-bottom: 8px;
 		display: inline-block;
-		transition: 1s ease;
+		transition: opacity 1s ease;
+		opacity: 0;
+
+		@media only screen and (max-width: 640px) {
+			font-size: 40px;
+			line-height: 40px;
+			letter-spacing: 3px;
+		}
 	}
 }
 
@@ -47,6 +56,12 @@
 			font-weight: normal;
 			letter-spacing: 9px;
 			line-height: 204px;
+
+			@media only screen and (max-width: 640px) {
+				font-size: 80px;
+				line-height: 80px;
+				letter-spacing: 5px;
+			}
 		}
 
 		.shadow {
@@ -54,11 +69,22 @@
 			top: -398px;
 			left: 22px;
 			width: 434px;
+			
+			// Firefox exception
+			@-moz-document url-prefix() {
+				top: -414px; 
+			}
 
-		// Firefox exception
-		@-moz-document url-prefix() {
-			top: -414px; 
+			@media only screen and (max-width: 640px) {
+				top: -156px;
+				left: 7px;
+				width: 171px;
+
+				@-moz-document url-prefix() {
+					top: -162px;
+					left: 8px; 
+				}
+			}
 		}
 	}
-}
 }
