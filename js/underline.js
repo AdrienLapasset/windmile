@@ -84,7 +84,6 @@ var getElementStyles = function(element){
    myUnderline.draw();
  }
 
- 
 	// request new frame
 	requestAnimFrame(function() {
    animate();
