@@ -7,13 +7,12 @@
 		color: black;
 		font-size: 80px;
 		font-weight: normal;
-		letter-spacing: 10px;
-		padding-right: 3px;
-		margin-bottom: 8px;
+		letter-spacing: 3px;
+		line-height: 80px;
 		display: inline-block;
-		transition: opacity 1s ease;
+		// transition: opacity 1s ease;
 		opacity: 0;
-
+		
 		@media only screen and (max-width: 640px) {
 			font-size: 40px;
 			line-height: 40px;
