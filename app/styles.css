@@ -61,6 +61,7 @@
       top: -398px;
       left: 22px;
       width: 434px; }
+
 @-moz-document url-prefix() {
   .home .title .shadow {
     top: -414px; } }
@@ -180,9 +181,11 @@
     left: -90px;
     bottom: 107px;
     font-size: 11px; }
+
 @-moz-document url-prefix() {
   .menu .credits {
     left: -86px; } }
+
 .menu-button {
   width: 40px;
   height: 40px;
@@ -244,6 +247,7 @@
 @font-face {
   font-family: Zorus_Serif_Italic;
   src: url("../fonts/Zorus_Serif_Italic.otf"); }
+
 * {
   margin: 0;
   padding: 0;
@@ -259,5 +263,3 @@ body {
 a {
   text-decoration: none;
   display: inline-block; }
-
-/*# sourceMappingURL=style.css.map */
