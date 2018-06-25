@@ -17,6 +17,9 @@
         letter-spacing: 3px; } }
 
 .home {
+  font-family: Zorus_Serif_Italic;
+  text-transform: uppercase;
+  overflow: hidden;
   width: 70%;
   height: 77%;
   margin: auto;
@@ -244,6 +247,68 @@
     .underline canvas {
       display: none; } }
 
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh; }
+  .landing * {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700; }
+  .landing__background {
+    background-image: url("pictures/hush.jpg");
+    background-size: cover;
+    background-position: center;
+    width: calc(100% + 40px);
+    height: calc(100vh + 40px);
+    filter: blur(20px);
+    position: fixed;
+    top: -20px;
+    left: -10px;
+    z-index: -1; }
+  .landing__content {
+    text-align: center; }
+    .landing__content__img {
+      width: 530px;
+      height: 530px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
+    .landing__content__text {
+      font-weight: 400;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      font-size: 18px;
+      margin-top: 1em; }
+    .landing__content__title {
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      font-size: 48px;
+      margin-top: 0.1em; }
+    .landing__content__cta {
+      display: flex;
+      justify-content: center; }
+    .landing__content__btn {
+      margin-top: 2em;
+      height: 46px;
+      border-radius: 36.5px;
+      text-transform: uppercase;
+      padding: 0 1em;
+      font-size: 18px;
+      border: none;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+      cursor: pointer;
+      transition: box-shadow .2s;
+      display: flex;
+      align-items: center; }
+      .landing__content__btn--listen {
+        background-color: black;
+        margin-right: 1em;
+        display: flex; }
+        .landing__content__btn--listen__play {
+          margin-left: .5em; }
+      .landing__content__btn--visit {
+        background-color: rgba(47, 47, 47, 0.15);
+        color: black; }
+      .landing__content__btn:hover {
+        box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.5); }
+
 @font-face {
   font-family: Zorus_Serif_Italic;
   src: url("../fonts/Zorus_Serif_Italic.otf"); }
@@ -254,11 +319,6 @@
   color: white; }
   *:focus {
     outline: none; }
-
-body {
-  font-family: Zorus_Serif_Italic;
-  text-transform: uppercase;
-  overflow: hidden; }
 
 a {
   text-decoration: none;
