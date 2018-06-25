@@ -17,9 +17,6 @@
         letter-spacing: 3px; } }
 
 .home {
-  font-family: Zorus_Serif_Italic;
-  text-transform: uppercase;
-  overflow: hidden;
   width: 70%;
   height: 77%;
   margin: auto;
@@ -319,6 +316,11 @@
   color: white; }
   *:focus {
     outline: none; }
+
+body {
+  font-family: Zorus_Serif_Italic;
+  text-transform: uppercase;
+  overflow: hidden; }
 
 a {
   text-decoration: none;
