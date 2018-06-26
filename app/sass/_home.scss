@@ -1,89 +1,96 @@
 .intro {
-	text-align: center;
-	margin-top: 43vh;
-	transform: translateY(-50%);
+  text-align: center;
+  margin-top: 43vh;
+  transform: translateY(-50%);
 
-	p {
-		color: black;
-		font-size: 80px;
-		font-weight: normal;
-		letter-spacing: 3px;
-		line-height: 80px;
-		display: inline-block;
-		// transition: opacity 1s ease;
-		opacity: 0;
-		
-		@media only screen and (max-width: 640px) {
-			font-size: 40px;
-			line-height: 40px;
-			letter-spacing: 3px;
-		}
-	}
+  p {
+    color: black;
+    font-size: 80px;
+    font-weight: normal;
+    letter-spacing: 3px;
+    line-height: 80px;
+    display: inline-block;
+
+    // transition: opacity 1s ease;
+    opacity: 0;
+
+    @media only screen and (max-width: 640px) {
+      font-size: 40px;
+      line-height: 40px;
+      letter-spacing: 3px;
+    }
+  }
 }
 
 .home {
-	width: 70%;
-	height: 77%;
-	margin: auto;
-	position: absolute;
-	top: 0; left: 0; bottom: 0; right: 0;
-	background: url('../pictures/background.jpg');
-	background-size: cover;
-	background-position: center;
-	-webkit-box-shadow: -2px 2px 5px 0px rgba(0,0,0,0.25);
-	-moz-box-shadow: -2px 2px 5px 0px rgba(0,0,0,0.25);
-	box-shadow: -2px 2px 5px 0px rgba(0,0,0,0.25);
-	transition: opacity 2s; 
-	opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 
-	.title {
-		height: 100%;
-		width: 100%;
-		text-align: center;
-		margin-top: 50vh;
-		transform: translateY(-50%);
+  &__windmile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    height: 60vh;
+    background: url("../pictures/background.jpg");
+    background-size: cover;
+    background-position: center;
+    -webkit-box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    transition: opacity 2s;
 
-		h1 {
-			background: url('../pictures/mask.jpg');
-			-webkit-text-fill-color: transparent;
-			-webkit-background-clip: text;
-			background-size: cover;
-			background-position: center;
-			-webkit-transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
-			transition:         all 2s cubic-bezier(0.075, 0.82, 0.165, 1);	
-			font-size: 210px;
-			font-weight: normal;
-			letter-spacing: 9px;
-			line-height: 204px;
+    // opacity: 0;
 
-			@media only screen and (max-width: 640px) {
-				font-size: 80px;
-				line-height: 80px;
-				letter-spacing: 5px;
-			}
-		}
+    &__title {
+			height: 400px;
 
-		.shadow {
-			position: relative;
-			top: -398px;
-			left: 22px;
-			width: 434px;
+      h1 {
+        background: url("../pictures/mask.jpg");
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-size: cover;
+        background-position: center;
+        -webkit-transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+        font-size: 210px;
+        font-weight: normal;
+        letter-spacing: 9px;
+				line-height: 204px;
+				text-align: center;
+				padding-right: 40px;
 			
-			// Firefox exception
-			@-moz-document url-prefix() {
-				top: -414px; 
-			}
+		  @media only screen and (max-width: 640px) {
+          font-size: 80px;
+          line-height: 80px;
+          letter-spacing: 5px;
+        }
+      }
 
-			@media only screen and (max-width: 640px) {
-				top: -156px;
-				left: 7px;
-				width: 171px;
+      .shadow {
+				position: relative;
+				top: -399px;
+				left: 30px;
+        width: 434px;
 
-				@-moz-document url-prefix() {
-					top: -162px;
-					left: 8px; 
-				}
-			}
-		}
-	}
+        // Firefox exception
+        @-moz-document url-prefix() {
+          top: -414px;
+        }
+
+        @media only screen and (max-width: 640px) {
+          top: -156px;
+          left: 7px;
+          width: 171px;
+
+          @-moz-document url-prefix() {
+            top: -162px;
+            left: 8px;
+          }
+        }
+      }
+    }
+  }
 }

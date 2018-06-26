@@ -17,63 +17,62 @@
         letter-spacing: 3px; } }
 
 .home {
-  width: 70%;
-  height: 77%;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: url("../pictures/background.jpg");
-  background-size: cover;
-  background-position: center;
-  -webkit-box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.25);
-  box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.25);
-  transition: opacity 2s;
-  opacity: 0; }
-  .home .title {
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    margin-top: 50vh;
-    transform: translateY(-50%); }
-    .home .title h1 {
-      background: url("../pictures/mask.jpg");
-      -webkit-text-fill-color: transparent;
-      -webkit-background-clip: text;
-      background-size: cover;
-      background-position: center;
-      -webkit-transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
-      transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
-      font-size: 210px;
-      font-weight: normal;
-      letter-spacing: 9px;
-      line-height: 204px; }
-      @media only screen and (max-width: 640px) {
-        .home .title h1 {
-          font-size: 80px;
-          line-height: 80px;
-          letter-spacing: 5px; } }
-    .home .title .shadow {
-      position: relative;
-      top: -398px;
-      left: 22px;
-      width: 434px; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
+  .home__windmile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    height: 60vh;
+    background: url("../pictures/background.jpg");
+    background-size: cover;
+    background-position: center;
+    -webkit-box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    transition: opacity 2s; }
+    .home__windmile__title {
+      height: 400px; }
+      .home__windmile__title h1 {
+        background: url("../pictures/mask.jpg");
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-size: cover;
+        background-position: center;
+        -webkit-transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+        font-size: 210px;
+        font-weight: normal;
+        letter-spacing: 9px;
+        line-height: 204px;
+        text-align: center;
+        padding-right: 40px; }
+        @media only screen and (max-width: 640px) {
+          .home__windmile__title h1 {
+            font-size: 80px;
+            line-height: 80px;
+            letter-spacing: 5px; } }
+      .home__windmile__title .shadow {
+        position: relative;
+        top: -399px;
+        left: 30px;
+        width: 434px; }
 
 @-moz-document url-prefix() {
-  .home .title .shadow {
+  .home__windmile__title .shadow {
     top: -414px; } }
-      @media only screen and (max-width: 640px) {
-        .home .title .shadow {
-          top: -156px;
-          left: 7px;
-          width: 171px; }
-        @-moz-document url-prefix() {
-          .home .title .shadow {
-            top: -162px;
-            left: 8px; } } }
+        @media only screen and (max-width: 640px) {
+          .home__windmile__title .shadow {
+            top: -156px;
+            left: 7px;
+            width: 171px; }
+          @-moz-document url-prefix() {
+            .home__windmile__title .shadow {
+              top: -162px;
+              left: 8px; } } }
 
 .menu {
   z-index: 1;
@@ -84,59 +83,7 @@
   right: 0;
   position: absolute;
   visibility: hidden;
-  opacity: 0;
-  width: 100%;
-  height: 100%; }
-  .menu .wrapper {
-    margin: 4% 14%;
-    height: 68%;
-    padding-top: 45px; }
-    .menu .wrapper ul {
-      text-align: center;
-      width: 46%; }
-      .menu .wrapper ul.col1 {
-        float: left;
-        padding-left: 4%; }
-        @media only screen and (max-width: 640px) {
-          .menu .wrapper ul.col1 {
-            float: none;
-            padding: 0; } }
-      .menu .wrapper ul.col2 {
-        float: right;
-        padding-right: 4%; }
-        @media only screen and (max-width: 640px) {
-          .menu .wrapper ul.col2 {
-            float: none;
-            padding: 0; } }
-      .menu .wrapper ul li {
-        padding-top: 91px;
-        font-size: 25px;
-        list-style: none; }
-        @media only screen and (max-width: 640px) {
-          .menu .wrapper ul li {
-            font-size: 17px;
-            padding-top: 5vh; } }
-        .menu .wrapper ul li a {
-          letter-spacing: 4px;
-          text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5); }
-          @media only screen and (max-width: 640px) {
-            .menu .wrapper ul li a:after {
-              margin-top: 5px;
-              content: '';
-              display: block;
-              height: 2px;
-              width: 25px;
-              background: white;
-              transition: width .3s ease; }
-            .menu .wrapper ul li a:hover:after {
-              width: 100%;
-              color: white; } }
-      @media only screen and (max-width: 640px) {
-        .menu .wrapper ul {
-          width: 100%; } }
-    @media only screen and (max-width: 640px) {
-      .menu .wrapper {
-        margin: 0% 14%; } }
+  opacity: 0; }
   .menu.open {
     background: rgba(0, 0, 0, 0.5);
     visibility: visible;
@@ -195,8 +142,8 @@
   background: transparent;
   z-index: 10;
   position: relative;
-  top: 0px;
-  right: -70px;
+  top: calc(-30vh + 20px);
+  left: 20px;
   float: right;
   cursor: pointer; }
   .menu-button:before, .menu-button:after {
