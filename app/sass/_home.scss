@@ -115,11 +115,11 @@
     justify-content: center;
 
     &__icon {
-			text-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 
       &:not(:last-child) {
         margin-right: 2em;
       }
     }
-  }
+	}
 }

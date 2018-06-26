@@ -92,7 +92,7 @@
   display: flex;
   justify-content: center; }
   .home__socials__icon {
-    text-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); }
     .home__socials__icon:not(:last-child) {
       margin-right: 2em; }
 
@@ -103,7 +103,7 @@
   align-self: flex-start;
   z-index: 1;
   transition: 0.5s ease;
-  margin-right: -500px; }
+  margin-right: -520px; }
   .menu__list {
     visibility: hidden;
     opacity: 0;
@@ -247,6 +247,27 @@
         color: black; }
       .landing__content__btn:hover {
         box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.5); }
+
+.content {
+  position: absolute;
+  width: 60vw;
+  height: 60vh;
+  display: flex; }
+  .content__text-container {
+    font-size: 14px;
+    flex-basis: 50%;
+    padding: 5em 5em 0 5em;
+    overflow-y: scroll; }
+  .content__text {
+    font-size: 14px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); }
+  .content__img {
+    flex-basis: 50%;
+    flex-shrink: 0;
+    height: 100%;
+    background-image: url("pictures/bio.jpg");
+    background-position: center;
+    background-size: cover; }
 
 @font-face {
   font-family: Zorus_Serif_Italic;
