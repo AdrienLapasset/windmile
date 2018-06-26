@@ -50,5 +50,12 @@ $(document).ready(function() {
 			$(this).toggleClass('open');
 			$('.menu__list').toggleClass('open'); 
 			$('.home__darken').fadeToggle(); 
+			$('.home__socials').fadeToggle(); 
+			$('.content__bio').css('display', 'none');
+		});
+
+		// Menu
+		$('.menu__bio').click(function() {
+			$('.content__bio').css('display', 'flex');
 		});
 	});

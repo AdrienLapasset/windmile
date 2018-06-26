@@ -112,7 +112,8 @@
     position: relative;
     bottom: 12vh;
     display: flex;
-    justify-content: center;
+		justify-content: center;
+		display: none;
 
     &__icon {
       text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
