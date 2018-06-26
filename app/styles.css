@@ -51,7 +51,8 @@
       font-size: 210px;
       font-weight: normal;
       letter-spacing: 9px;
-      line-height: 204px; }
+      line-height: 204px;
+      padding-right: 20px; }
       @media only screen and (max-width: 640px) {
         .home__windmile__title h1 {
           font-size: 80px;
@@ -60,7 +61,7 @@
     .home__windmile__title .shadow {
       position: relative;
       top: -398px;
-      left: 22px;
+      left: 13px;
       width: 434px; }
 
 @-moz-document url-prefix() {
