@@ -46,6 +46,9 @@
 
     &__title {
 			height: 400px;
+			text-align: center;
+			font-family: Zorus_Serif_Italic;
+			text-transform: uppercase;
 
       h1 {
         background: url("../pictures/mask.jpg");
@@ -59,8 +62,6 @@
         font-weight: normal;
         letter-spacing: 9px;
 				line-height: 204px;
-				text-align: center;
-				padding-right: 40px;
 			
 		  @media only screen and (max-width: 640px) {
           font-size: 80px;
@@ -71,8 +72,8 @@
 
       .shadow {
 				position: relative;
-				top: -399px;
-				left: 30px;
+				top: -398px;
+				left: 22px;
         width: 434px;
 
         // Firefox exception
@@ -92,5 +93,15 @@
         }
       }
     }
-  }
+	}
+	
+	&__darken {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,0.5);
+		display: none;
+	}
 }

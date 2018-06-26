@@ -35,7 +35,10 @@
     box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.25);
     transition: opacity 2s; }
     .home__windmile__title {
-      height: 400px; }
+      height: 400px;
+      text-align: center;
+      font-family: Zorus_Serif_Italic;
+      text-transform: uppercase; }
       .home__windmile__title h1 {
         background: url("../pictures/mask.jpg");
         -webkit-text-fill-color: transparent;
@@ -47,9 +50,7 @@
         font-size: 210px;
         font-weight: normal;
         letter-spacing: 9px;
-        line-height: 204px;
-        text-align: center;
-        padding-right: 40px; }
+        line-height: 204px; }
         @media only screen and (max-width: 640px) {
           .home__windmile__title h1 {
             font-size: 80px;
@@ -57,8 +58,8 @@
             letter-spacing: 5px; } }
       .home__windmile__title .shadow {
         position: relative;
-        top: -399px;
-        left: 30px;
+        top: -398px;
+        left: 22px;
         width: 434px; }
 
 @-moz-document url-prefix() {
@@ -73,54 +74,34 @@
             .home__windmile__title .shadow {
               top: -162px;
               left: 8px; } } }
+  .home__darken {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none; }
 
 .menu {
+  margin-top: 20vh;
+  margin-left: 20px;
+  align-self: flex-start;
   z-index: 1;
-  transition: 0.5s ease;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  visibility: hidden;
-  opacity: 0; }
-  .menu.open {
-    background: rgba(0, 0, 0, 0.5);
-    visibility: visible;
-    opacity: 1; }
-  .menu .contact {
-    position: absolute;
-    bottom: 4%;
-    left: 50%; }
-    .menu .contact a {
-      position: relative;
-      left: -50%;
-      font-family: 'Nunito Sans', sans-serif;
-      font-weight: 800;
-      letter-spacing: 5px;
-      font-size: 14px;
-      transition: all 0.3s ease;
-      text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5); }
-      .menu .contact a .material-icons {
-        position: relative;
-        top: 6px;
-        left: -12px;
-        font-size: 22px; }
-        @media only screen and (max-width: 640px) {
-          .menu .contact a .material-icons {
-            font-size: 15px;
-            top: 4px;
-            left: -6px; } }
-      .menu .contact a:hover {
-        transform: translateY(1px);
-        text-shadow: none; }
-      @media only screen and (max-width: 640px) {
-        .menu .contact a {
-          white-space: nowrap;
-          font-size: 9px;
-          letter-spacing: 3px; } }
+  transition: 0.5s ease; }
+  .menu__list {
+    visibility: hidden;
+    opacity: 0;
+    list-style-type: none;
+    font-size: 24px;
+    margin-top: 25px; }
+    .menu__list.open {
+      visibility: visible;
+      opacity: 1; }
+    .menu__list__item {
+      margin-bottom: 25px;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); }
   .menu .credits {
-    font-family: 'Nunito Sans', sans-serif;
     font-weight: 200;
     text-transform: none;
     transform: rotate(-90deg);
@@ -133,7 +114,7 @@
   .menu .credits {
     left: -86px; } }
 
-.menu-button {
+.menu__btn {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -142,32 +123,31 @@
   background: transparent;
   z-index: 10;
   position: relative;
-  top: calc(-30vh + 20px);
-  left: 20px;
-  float: right;
   cursor: pointer; }
-  .menu-button:before, .menu-button:after {
+  .menu__btn:before, .menu__btn:after {
     content: "";
     display: block;
     background: black;
     position: absolute; }
-  .menu-button:before {
+  .menu__btn:before {
     width: 2px;
     height: 30px;
     top: 5px;
     left: 19px; }
-  .menu-button:after {
+  .menu__btn:after {
     width: 30px;
     height: 2px;
     bottom: 19px;
     left: 5px; }
-  .menu-button.open {
+  .menu__btn.open {
     border: 2px solid white;
-    transform: rotate(225deg); }
-    .menu-button.open:before, .menu-button.open:after {
-      background: white; }
+    transform: rotate(225deg);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
+    .menu__btn.open:before, .menu__btn.open:after {
+      background: white;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
   @media only screen and (max-width: 640px) {
-    .menu-button {
+    .menu__btn {
       top: -22px;
       right: -22px; } }
 
@@ -265,9 +245,7 @@
     outline: none; }
 
 body {
-  font-family: Zorus_Serif_Italic;
-  text-transform: uppercase;
-  overflow: hidden; }
+  font-family: 'Nunito', sans-serif; }
 
 a {
   text-decoration: none;

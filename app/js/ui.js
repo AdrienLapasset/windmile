@@ -46,8 +46,9 @@ $(document).ready(function() {
 		});
 
 		// Open-Close button //
-		$('.menu-button').click(function() {
+		$('.menu__btn').click(function() {
 			$(this).toggleClass('open');
-			$('.menu').toggleClass('open');    
+			$('.menu__list').toggleClass('open'); 
+			$('.home__darken').fadeToggle(); 
 		});
 	});

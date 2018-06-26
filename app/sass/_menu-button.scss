@@ -1,4 +1,4 @@
-.menu-button {
+.menu__btn {
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
@@ -6,10 +6,7 @@
 	transition: 0.5s;
 	background: transparent;
 	z-index: 10;
-	position: relative;
-	top: calc(-30vh + 20px);
-	left: 20px;
-	float: right;
+	position: relative;	
 	cursor: pointer;
 
 	&:before, &:after {
@@ -36,9 +33,11 @@
 	&.open {
 		border: 2px solid white;
 		transform: rotate(225deg);
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 
 		&:before, &:after {
 			background: white;
+			box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 		}
 	}
 
