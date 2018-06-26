@@ -1,9 +1,11 @@
 .menu {
+	width: 500px;
 	margin-top: 20vh;
 	margin-left: 20px;
 	align-self: flex-start;
   z-index: 1;
 	transition: 0.5s ease;
+	margin-right: -500px;
 
   &__list {
     visibility: hidden;
