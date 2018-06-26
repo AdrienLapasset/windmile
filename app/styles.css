@@ -85,6 +85,17 @@
   background: rgba(0, 0, 0, 0.5);
   display: none; }
 
+.home__socials {
+  text-align: center;
+  position: relative;
+  bottom: 12vh;
+  display: flex;
+  justify-content: center; }
+  .home__socials__icon {
+    text-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
+    .home__socials__icon:not(:last-child) {
+      margin-right: 2em; }
+
 .menu {
   width: 500px;
   margin-top: 20vh;

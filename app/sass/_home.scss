@@ -23,13 +23,12 @@
 }
 
 .home {
-
-	&__container {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		height: 100vh;
-	}
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
 
   &__windmile {
     display: flex;
@@ -48,10 +47,10 @@
     // opacity: 0;
 
     &__title {
-			height: 400px;
-			text-align: center;
-			font-family: Zorus_Serif_Italic;
-			text-transform: uppercase;
+      height: 400px;
+      text-align: center;
+      font-family: Zorus_Serif_Italic;
+      text-transform: uppercase;
 
       h1 {
         background: url("../pictures/mask.jpg");
@@ -64,9 +63,9 @@
         font-size: 210px;
         font-weight: normal;
         letter-spacing: 9px;
-				line-height: 204px;
-			
-		  @media only screen and (max-width: 640px) {
+        line-height: 204px;
+
+        @media only screen and (max-width: 640px) {
           font-size: 80px;
           line-height: 80px;
           letter-spacing: 5px;
@@ -74,9 +73,9 @@
       }
 
       .shadow {
-				position: relative;
-				top: -398px;
-				left: 22px;
+        position: relative;
+        top: -398px;
+        left: 22px;
         width: 434px;
 
         // Firefox exception
@@ -96,15 +95,31 @@
         }
       }
     }
-	}
-	
-	&__darken {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background: rgba(0,0,0,0.5);
-		display: none;
-	}
+  }
+
+  &__darken {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+  }
+
+  &__socials {
+    text-align: center;
+    position: relative;
+    bottom: 12vh;
+    display: flex;
+    justify-content: center;
+
+    &__icon {
+			text-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+
+      &:not(:last-child) {
+        margin-right: 2em;
+      }
+    }
+  }
 }
