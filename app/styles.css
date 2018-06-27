@@ -1,139 +1,149 @@
 .intro {
-  text-align: center;
-  margin-top: 43vh;
-  transform: translateY(-50%); }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Zorus_Serif_Italic;
+  text-transform: uppercase; }
+  .intro__wind, .intro__mile {
+    display: flex;
+    flex-direction: row; }
   .intro p {
     color: black;
     font-size: 80px;
     font-weight: normal;
     letter-spacing: 3px;
     line-height: 80px;
-    display: inline-block;
-    opacity: 0; }
+    opacity: 0;
+    transition: opacity 2s ease-in; }
     @media only screen and (max-width: 640px) {
       .intro p {
         font-size: 40px;
         line-height: 40px;
         letter-spacing: 3px; } }
 
-.home__newsletter {
-  z-index: 1;
-  top: 0;
-  transform: translateY(-100%);
-  position: absolute;
-  width: 100%;
-  padding: 1em;
-  background-color: #252525;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: transform .5s; }
-  .home__newsletter--show {
-    transform: translateY(0); }
-  .home__newsletter--hide {
-    transform: translateY(-3em); }
-  .home__newsletter:hover {
-    transform: translateY(0); }
-  .home__newsletter__text {
-    font-size: 18px;
-    margin-right: 1em; }
-  .home__newsletter__cta {
-    height: 30px;
-    border-radius: 36.5px;
-    padding: 0 1em;
-    border: none;
-    cursor: pointer;
+.home {
+  transition: opacity 2s;
+  opacity: 0; }
+  .home__newsletter {
+    z-index: 1;
+    top: 0;
+    transform: translateY(-100%);
+    position: absolute;
+    width: 100%;
+    padding: 1em;
+    background-color: #252525;
     display: flex;
+    justify-content: center;
     align-items: center;
-    background-color: #3b3b3b;
-    font-size: 12px;
-    font-weight: 700; }
-    .home__newsletter__cta:hover .home__newsletter__cta__icon {
-      transform: translateX(3px); }
-    .home__newsletter__cta__icon {
-      transition: transform .2s;
-      margin-left: .7em; }
-
-.home__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; }
-
-.home__windmile {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 60vw;
-  height: 60vh;
-  background: url("../pictures/background.jpg");
-  background-size: cover;
-  background-position: center;
-  -webkit-box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.25);
-  box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.25);
-  transition: opacity 2s; }
-  .home__windmile__title {
-    height: 400px;
-    text-align: center;
-    font-family: Zorus_Serif_Italic;
-    text-transform: uppercase; }
-    .home__windmile__title h1 {
-      background: url("../pictures/mask.jpg");
-      -webkit-text-fill-color: transparent;
-      -webkit-background-clip: text;
-      background-size: cover;
-      background-position: center;
-      -webkit-transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
-      transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
-      font-size: 210px;
-      font-weight: normal;
-      letter-spacing: 9px;
-      line-height: 204px;
-      padding-right: 20px; }
-      @media only screen and (max-width: 640px) {
-        .home__windmile__title h1 {
-          font-size: 80px;
-          line-height: 80px;
-          letter-spacing: 5px; } }
-    .home__windmile__title .shadow {
-      position: relative;
-      top: -398px;
-      left: 13px;
-      width: 434px; }
+    transition: transform .5s; }
+    .home__newsletter--show {
+      transform: translateY(0); }
+    .home__newsletter--hide {
+      transform: translateY(-3em); }
+    .home__newsletter:hover {
+      transform: translateY(0); }
+    .home__newsletter__text {
+      font-size: 18px;
+      margin-right: 1em; }
+    .home__newsletter__cta {
+      height: 30px;
+      border-radius: 36.5px;
+      padding: 0 1em;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      background-color: #3b3b3b;
+      font-size: 12px;
+      font-weight: 700; }
+      .home__newsletter__cta:hover .home__newsletter__cta__icon {
+        transform: translateX(3px); }
+      .home__newsletter__cta__icon {
+        transition: transform .2s;
+        margin-left: .7em; }
+  .home__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; }
+  .home__windmile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    height: 60vh;
+    background: url("../pictures/background.jpg");
+    background-size: cover;
+    background-position: center;
+    -webkit-box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    transition: opacity 2s; }
+    .home__windmile__title {
+      height: 400px;
+      text-align: center;
+      font-family: Zorus_Serif_Italic;
+      text-transform: uppercase; }
+      .home__windmile__title h1 {
+        background: url("../pictures/mask.jpg");
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-size: cover;
+        background-position: center;
+        -webkit-transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+        font-size: 210px;
+        font-weight: normal;
+        letter-spacing: 9px;
+        line-height: 204px;
+        padding-right: 20px; }
+        @media only screen and (max-width: 640px) {
+          .home__windmile__title h1 {
+            font-size: 80px;
+            line-height: 80px;
+            letter-spacing: 5px; } }
+      .home__windmile__title .shadow {
+        position: relative;
+        top: -398px;
+        left: 13px;
+        width: 434px; }
 
 @-moz-document url-prefix() {
   .home__windmile__title .shadow {
     top: -414px; } }
-      @media only screen and (max-width: 640px) {
-        .home__windmile__title .shadow {
-          top: -156px;
-          left: 7px;
-          width: 171px; }
-        @-moz-document url-prefix() {
+        @media only screen and (max-width: 640px) {
           .home__windmile__title .shadow {
-            top: -162px;
-            left: 8px; } } }
-
-.home__darken {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: none; }
-
-.home__socials {
-  visibility: hidden;
-  text-align: center;
-  position: relative;
-  bottom: 12vh;
-  display: flex;
-  justify-content: center;
-  display: none;
-  animation: 2s cubic-bezier(0, 0, 0, 1) 0s 1 forwards fadein-bottom;
-  animation-delay: .5s; }
+            top: -156px;
+            left: 7px;
+            width: 171px; }
+          @-moz-document url-prefix() {
+            .home__windmile__title .shadow {
+              top: -162px;
+              left: 8px; } } }
+  .home__darken {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none; }
+  .home__socials {
+    visibility: hidden;
+    text-align: center;
+    position: relative;
+    bottom: 12vh;
+    display: flex;
+    justify-content: center;
+    display: none;
+    animation: 2s cubic-bezier(0, 0, 0, 1) 0s 1 forwards fadein-bottom;
+    animation-delay: .5s; }
 
 @keyframes fadein-bottom {
   0% {
@@ -145,13 +155,13 @@
   100% {
     visibility: visible;
     opacity: 1; } }
-  .home__socials__link:not(:last-child) {
-    margin-right: 2em; }
-  .home__socials__icon {
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
-    transition: filter .2s; }
-    .home__socials__icon:hover {
-      filter: none; }
+    .home__socials__link:not(:last-child) {
+      margin-right: 2em; }
+    .home__socials__icon {
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+      transition: filter .2s; }
+      .home__socials__icon:hover {
+        filter: none; }
 
 .menu {
   width: 500px;

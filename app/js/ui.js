@@ -21,18 +21,23 @@ $(document).ready(function () {
 	// Show letters one by one with delay
 	function showLetters() {
 		setTimeout(function () {
-			$('.' + letters[i]).fadeIn().css("opacity", "1");
+			$('.' + letters[i]).css("opacity", "1");
 			i++;
 			if (i < 8) {
 				showLetters();
 			}
+
 			// Then show Home
 			else {
-				$('.intro').fadeOut(1000, function () {
-					$('.home').css("opacity", "1");
-				});
+				setTimeout(function () {
+					$('.intro').fadeOut(2000, function () {
+						$('.home').css("opacity", "1");
+					});
+					setTimeout(showNewsletter, 6000);
+					setTimeout(hideNewsletter, 10000);
+				}, 2000);
 			}
-		}, 300);
+		}, 400);
 	}
 	showLetters();
 
@@ -74,14 +79,11 @@ $(document).ready(function () {
 	});
 
 	// Newsletter
-	function showNewsletter(){
+	function showNewsletter() {
 		$('.home__newsletter').addClass('home__newsletter--show');
 	}
 
-	function hideNewsletter(){
+	function hideNewsletter() {
 		$('.home__newsletter').addClass('home__newsletter--hide');
 	}
-	
-	setTimeout(showNewsletter, 2000);
-	setTimeout(hideNewsletter, 6000);
 });

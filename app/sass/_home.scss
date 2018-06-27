@@ -1,18 +1,29 @@
 .intro {
-  text-align: center;
-  margin-top: 43vh;
-  transform: translateY(-50%);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: Zorus_Serif_Italic;
+	text-transform: uppercase;
+
+	&__wind, &__mile {
+		display: flex;
+		flex-direction: row;
+	}
 
   p {
     color: black;
     font-size: 80px;
     font-weight: normal;
     letter-spacing: 3px;
-    line-height: 80px;
-    display: inline-block;
-
-    // transition: opacity 1s ease;
-    opacity: 0;
+		line-height: 80px;
+		opacity: 0;
+		transition: opacity 2s ease-in;
 
     @media only screen and (max-width: 640px) {
       font-size: 40px;
@@ -23,6 +34,9 @@
 }
 
 .home {
+	transition: opacity 2s; 
+	opacity: 0;
+
   &__newsletter {
     z-index: 1;
     top: 0;
