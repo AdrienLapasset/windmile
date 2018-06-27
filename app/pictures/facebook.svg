@@ -1,21 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
     <title>facebook</title>
     <desc>Created with Sketch.</desc>
-    <defs>
-        <filter x="-1.1%" y="-20.0%" width="102.2%" height="156.0%" filterUnits="objectBoundingBox" id="filter-1">
-            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
-            <feMerge>
-                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
-                <feMergeNode in="SourceGraphic"></feMergeNode>
-            </feMerge>
-        </filter>
-    </defs>
+    <defs></defs>
     <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-8-Copy-2" filter="url(#filter-1)" transform="translate(4.000000, 2.000000)" fill="#FFFFFF">
+        <g id="Group-8-Copy-2" fill="#FFFFFF">
             <path d="M23.9585937,0 L1.0421875,0 C0.46640625,0 0,0.46640625 0,1.04140625 L0,23.9585938 C0,24.5335938 0.46640625,25 1.0421875,25 L13.28125,25 L13.28125,15.625 L10.15625,15.625 L10.15625,11.71875 L13.28125,11.71875 L13.28125,8.59375 C13.28125,5.36484375 15.3257812,3.77578125 18.20625,3.77578125 C19.5859375,3.77578125 20.771875,3.87890625 21.1171875,3.92421875 L21.1171875,7.29921875 L19.1195312,7.3 C17.553125,7.3 17.1875,8.04453125 17.1875,9.13671875 L17.1875,11.71875 L21.09375,11.71875 L20.3125,15.625 L17.1875,15.625 L17.25,25 L23.9585937,25 C24.5335937,25 25,24.5335938 25,23.9585938 L25,1.04140625 C25,0.46640625 24.5335937,0 23.9585937,0" id="facebook"></path>
         </g>
     </g>

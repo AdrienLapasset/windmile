@@ -3,17 +3,28 @@
 	height: 40px;
 	border-radius: 50%;
 	border: 2px solid black;
-	transition: 0.5s;
+	transition: box-shadow .2s, transform 0.5s;
 	background: transparent;
 	z-index: 10;
 	position: relative;	
 	cursor: pointer;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+
+	&:hover {
+		box-shadow: none;
+
+		&:before, &:after {
+			box-shadow: none;
+		}
+	}
 
 	&:before, &:after {
 		content: "";
 		display: block;
 		background: black;
 		position: absolute;
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+		transition: box-shadow .2s;
 	}
 
 	&:before {
@@ -33,11 +44,10 @@
 	&.open {
 		border: 2px solid white;
 		transform: rotate(-225deg);
-		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 
 		&:before, &:after {
 			background: white;
-			box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+			// box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 		}
 	}
 
