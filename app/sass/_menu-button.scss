@@ -32,7 +32,7 @@
 
 	&.open {
 		border: 2px solid white;
-		transform: rotate(225deg);
+		transform: rotate(-225deg);
 		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 
 		&:before, &:after {

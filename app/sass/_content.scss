@@ -2,30 +2,70 @@
   position: absolute;
   width: 60vw;
   height: 60vh;
-  display: flex;
+	display: flex;
+	overflow: hidden;
 
   &__bio {
     display: none;
 
     &__text-container {
       font-size: 14px;
-      flex-basis: 50%;
+      // flex-basis: 60%;
       padding: 5em 5em 0 5em;
       overflow-y: scroll;
     }
 
     &__text {
+			visibility: hidden;
       font-size: 14px;
-      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+			text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+			animation: 2s cubic-bezier(0, 0, 0, 1) 0s 1 forwards fadein-left;
+			animation-delay: 1s;
     }
 
     &__img {
-      flex-basis: 50%;
+      flex-basis: 45%;
       flex-shrink: 0;
       height: 100%;
       background-image: url("pictures/bio.jpg");
       background-position: center;
-      background-size: cover;
+			background-size: cover;
+			animation: 2s cubic-bezier(0, 0, 0, 1) 0s 1 forwards fadein-right;
+			box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+
+			@keyframes fadein-right {
+				0% {
+					opacity: 0;
+					transform: translateX(5%);
+					filter: blur(5px);
+				}
+	
+				40% {
+					transform: translateX(0%);
+				}
+	
+				100% {
+					opacity: 1;
+					filter: blur(0px);
+				}
+			}
+
+			@keyframes fadein-left {
+				0% {
+					visibility: visible;
+					opacity: 0;
+					transform: translateX(-5%);
+				}
+	
+				40% {
+					transform: translateX(0%);
+				}
+	
+				100% {
+					opacity: 1;
+					visibility: visible;
+				}
+			}
     }
   }
 }

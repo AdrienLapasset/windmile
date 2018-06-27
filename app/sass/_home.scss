@@ -23,6 +23,54 @@
 }
 
 .home {
+	&__newsletter {
+		z-index: 1;
+		top: 0;
+		transform: translateY(-100%);
+		position: absolute;
+		width: 100%;
+		padding: 1em;
+		background-color: #252525;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: transform .5s;
+
+		&--show {
+			transform: translateY(0);
+		}
+
+		&--hide {
+			transform: translateY(-3em);
+		}
+
+		&:hover {
+			transform: translateY(0);
+		}
+
+		&__text {
+			font-size: 18px;
+			margin-right: 1em;
+		}
+
+		&__cta {
+      height: 30px;
+      border-radius: 36.5px;
+      padding: 0 1em;
+			border: none;
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			background-color: #3b3b3b;
+			font-size: 12px;
+			font-weight: 700;
+
+			&__icon {
+				margin-left: .5em;
+			}
+		}
+	}
+
   &__container {
     display: flex;
     justify-content: center;
