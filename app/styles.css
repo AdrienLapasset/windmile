@@ -78,7 +78,7 @@
     align-items: center;
     width: 60vw;
     height: 60vh;
-    background: url("../pictures/background.jpg");
+    background: url("pictures/background.jpg");
     background-size: cover;
     background-position: center;
     -webkit-box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.25);
@@ -91,7 +91,7 @@
       font-family: Zorus_Serif_Italic;
       text-transform: uppercase; }
       .home__windmile__title h1 {
-        background: url("../pictures/mask.jpg");
+        background: url("pictures/mask.jpg");
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
         background-size: cover;
@@ -399,7 +399,7 @@
 
 @font-face {
   font-family: Zorus_Serif_Italic;
-  src: url("../fonts/Zorus_Serif_Italic.otf"); }
+  src: url("fonts/Zorus_Serif_Italic.otf"); }
 
 * {
   margin: 0;
