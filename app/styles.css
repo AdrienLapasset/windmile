@@ -28,8 +28,7 @@
         letter-spacing: 3px; } }
 
 .home {
-  transition: opacity 2s;
-  opacity: 0; }
+  display: none; }
   .home__newsletter {
     z-index: 1;
     top: 0;
@@ -76,8 +75,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60vw;
-    height: 60vh;
+    width: 65vw;
+    height: 70vh;
     background: url("pictures/background.jpg");
     background-size: cover;
     background-position: center;
@@ -135,26 +134,38 @@
     background: rgba(0, 0, 0, 0.5);
     display: none; }
   .home__socials {
-    visibility: hidden;
     text-align: center;
     position: relative;
-    bottom: 12vh;
+    bottom: 8.5vh;
     display: flex;
-    justify-content: center;
-    display: none;
-    animation: 2s cubic-bezier(0, 0, 0, 1) 0s 1 forwards fadein-bottom;
-    animation-delay: .5s; }
+    justify-content: center; }
+    .home__socials--show {
+      visibility: hidden;
+      animation: 2s cubic-bezier(0, 0, 0, 1) 0s 1 forwards fadeIn-bottom;
+      animation-delay: .5s; }
+    .home__socials--hide {
+      animation: 1s cubic-bezier(0, 0, 0, 1) 0s 1 forwards fadeOut-bottom; }
 
-@keyframes fadein-bottom {
+@keyframes fadeIn-bottom {
   0% {
-    visibility: visible;
     opacity: 0;
+    visibility: visible;
     transform: translateY(100%); }
   40% {
     transform: translateY(0%); }
   100% {
     visibility: visible;
     opacity: 1; } }
+
+@keyframes fadeOut-bottom {
+  0% {
+    opacity: 1; }
+  40% {
+    transform: translateY(100%); }
+  100% {
+    transform: translateY(100%);
+    visibility: hidden;
+    opacity: 0; } }
     .home__socials__link:not(:last-child) {
       margin-right: 2em; }
     .home__socials__icon {
@@ -165,11 +176,10 @@
 
 .menu {
   width: 500px;
-  margin-top: 20vh;
+  margin-top: 15vh;
   margin-left: 20px;
   align-self: flex-start;
   z-index: 1;
-  transition: 0.5s ease;
   margin-right: -520px; }
   .menu__list {
     list-style-type: none;
@@ -232,7 +242,7 @@
   z-index: 10;
   position: relative;
   cursor: pointer;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5); }
   .menu__btn:hover {
     box-shadow: none; }
     .menu__btn:hover:before, .menu__btn:hover:after {
@@ -242,7 +252,7 @@
     display: block;
     background: black;
     position: absolute;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
     transition: box-shadow .2s; }
   .menu__btn:before {
     width: 2px;
@@ -348,8 +358,8 @@
 
 .content {
   position: absolute;
-  width: 60vw;
-  height: 60vh;
+  width: 65vw;
+  height: 70vh;
   display: flex;
   overflow: hidden; }
   .content__bio {

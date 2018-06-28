@@ -30,11 +30,16 @@ $(document).ready(function () {
 			// Then show Home
 			else {
 				setTimeout(function () {
-					$('.intro').fadeOut(2000, function () {
-						$('.home').css("opacity", "1");
+					$('.intro').fadeOut(1000, function () {
+						$('.home').fadeIn(1000, function () {
+							setTimeout(function () {
+								showNewsletter()
+								setTimeout(function () {
+									hideNewsletter()
+								}, 4000);
+							}, 6000);
+						});
 					});
-					setTimeout(showNewsletter, 6000);
-					setTimeout(hideNewsletter, 10000);
 				}, 2000);
 			}
 		}, 400);
@@ -66,7 +71,15 @@ $(document).ready(function () {
 
 		// Darkening
 		$('.home__darken').fadeToggle();
-		$('.home__socials').fadeToggle();
+
+		// Socials
+		if ($('.home__socials').hasClass('home__socials--show') || $('.home__socials').hasClass('home__socials--hide')) {
+			$('.home__socials').toggleClass('home__socials--show');
+			$('.home__socials').toggleClass('home__socials--hide');
+		}
+		else {
+			$('.home__socials').toggleClass('home__socials--show');
+		}
 
 		// Close all pages
 		$('.content__bio').css('display', 'none');
