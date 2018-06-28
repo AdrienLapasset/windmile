@@ -29,6 +29,7 @@ $(document).ready(function () {
 
 			else {
 				setTimeout(function () {
+<<<<<<< HEAD
 					
 					//Intro fade out 
 					$('.intro').fadeOut(1000, function () {
@@ -46,7 +47,13 @@ $(document).ready(function () {
 							}, 6000);
 
 						});
+=======
+					$('.intro').fadeOut(2000, function () {
+						$('.home').css("opacity", "1");
+>>>>>>> parent of cf61e65... socials animations
 					});
+					setTimeout(showNewsletter, 6000);
+					setTimeout(hideNewsletter, 10000);
 				}, 2000);
 				
 			}
@@ -79,15 +86,7 @@ $(document).ready(function () {
 
 		// Darkening
 		$('.home__darken').fadeToggle();
-
-		// Socials
-		if ($('.home__socials').hasClass('home__socials--show') || $('.home__socials').hasClass('home__socials--hide')) {
-			$('.home__socials').toggleClass('home__socials--show');
-			$('.home__socials').toggleClass('home__socials--hide');
-		}
-		else {
-			$('.home__socials').toggleClass('home__socials--show');
-		}
+		$('.home__socials').fadeToggle();
 
 		// Close all pages
 		$('.content__bio').css('display', 'none');
