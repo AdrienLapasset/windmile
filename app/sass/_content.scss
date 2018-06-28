@@ -1,7 +1,7 @@
 .content {
   position: absolute;
-  width: 60vw;
-  height: 60vh;
+  width: 65vw;
+	height: 70vh;
 	display: flex;
 	overflow: hidden;
 
@@ -10,7 +10,6 @@
 
     &__text-container {
       font-size: 14px;
-      // flex-basis: 60%;
       padding: 5em 5em 0 5em;
       overflow-y: scroll;
     }
