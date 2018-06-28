@@ -35,18 +35,16 @@ $(document).ready(function () {
 
 						// Home fade in
 						// I don't use fadeIn jquery function here cause it doesn't work with the underline
-						$('.home').css("opacity", "1", function () {
+						$('.home').css("opacity", "1")
+
+						setTimeout(function () {
+							showNewsletter()
 
 							setTimeout(function () {
-								showNewsletter()
+								hideNewsletter()
+							}, 4000);
 
-								setTimeout(function () {
-									hideNewsletter()
-								}, 4000);
-
-							}, 6000);
-
-						});
+						}, 7000);//+1s so 6s
 					});
 				}, 2000);
 
