@@ -28,7 +28,8 @@
         letter-spacing: 3px; } }
 
 .home {
-  display: none; }
+  opacity: 0;
+  transition: opacity 1s; }
   .home__newsletter {
     z-index: 1;
     top: 0;

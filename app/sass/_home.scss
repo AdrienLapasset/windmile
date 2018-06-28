@@ -34,7 +34,8 @@
 }
 
 .home {
-  display: none;
+	opacity: 0;
+	transition: opacity 1s;
 
   &__newsletter {
     z-index: 1;

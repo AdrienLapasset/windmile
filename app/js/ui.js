@@ -31,10 +31,11 @@ $(document).ready(function () {
 				setTimeout(function () {
 
 					//Intro fade out 
-					$('.intro').fadeOut(1000, function () {
+					$('.intro').fadeOut(500, function () {
 
 						// Home fade in
-						$('.home').fadeIn(1000, function () {
+						// I don't use fadeIn jquery function cause it doesn't work with the underline
+						$('.home').css("opacity", "1", function () {
 
 							setTimeout(function () {
 								showNewsletter()
