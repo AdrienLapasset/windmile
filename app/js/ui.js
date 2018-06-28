@@ -27,20 +27,28 @@ $(document).ready(function () {
 				showLetters();
 			}
 
-			// Then show Home
 			else {
 				setTimeout(function () {
+					
+					//Intro fade out 
 					$('.intro').fadeOut(1000, function () {
+
+						// Home fade in
 						$('.home').fadeIn(1000, function () {
+
 							setTimeout(function () {
 								showNewsletter()
+
 								setTimeout(function () {
 									hideNewsletter()
 								}, 4000);
+
 							}, 6000);
+
 						});
 					});
 				}, 2000);
+				
 			}
 		}, 400);
 	}
