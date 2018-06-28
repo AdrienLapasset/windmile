@@ -96,7 +96,7 @@ function SingleUnderline(element, underlineStyles, elementStyles, id) {
     textWidth = this.ctx.measureText(this.text).width;
     this.myString = new GuitarString(this.ctx, 
         new Point(0, this.underlinePosition), 
-        new Point(textWidth * 1.8, this.underlinePosition), 
+        new Point(textWidth, this.underlinePosition), 
         this.strokeWidth, this.underlineStyles['text-underline-color'], this.ratio, this.id);
     // this.drawHoles();
 }
