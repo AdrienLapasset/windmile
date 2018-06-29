@@ -1,22 +1,30 @@
-.menu-button {
+.menu__btn {
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
 	border: 2px solid black;
-	transition: 0.5s;
+	transition: box-shadow .2s, transform 0.5s;
 	background: transparent;
 	z-index: 10;
-	position: relative;
-	top: 0px;
-	right: -70px;
-	float: right;
+	position: relative;	
 	cursor: pointer;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+
+	&:hover {
+		box-shadow: none;
+
+		&:before, &:after {
+			box-shadow: none;
+		}
+	}
 
 	&:before, &:after {
 		content: "";
 		display: block;
 		background: black;
 		position: absolute;
+		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+		transition: box-shadow .2s;
 	}
 
 	&:before {
@@ -35,7 +43,7 @@
 
 	&.open {
 		border: 2px solid white;
-		transform: rotate(225deg);
+		transform: rotate(-225deg);
 
 		&:before, &:after {
 			background: white;
