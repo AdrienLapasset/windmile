@@ -26,9 +26,13 @@
     text-align: center;
 
     &__img {
-      width: 530px;
-      height: 530px;
-      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+			max-width: 520px;
+      width: 35vw;
+			box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+			
+			@media (max-width: 575.98px) {
+				width: 90%;
+			}
     }
 
     &__text {
