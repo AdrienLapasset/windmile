@@ -367,7 +367,7 @@
     display: none; }
     .content__bio__text-container {
       font-size: 14px;
-      padding: 5em 5em 0 5em;
+      padding: 5em;
       overflow-y: scroll; }
     .content__bio__text {
       visibility: hidden;
