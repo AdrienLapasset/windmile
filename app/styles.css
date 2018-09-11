@@ -334,7 +334,11 @@
       margin-top: 0.1em; }
     .landing__content__cta {
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      align-items: center; }
+      @media (max-width: 575.98px) {
+        .landing__content__cta {
+          flex-direction: column; } }
     .landing__content__btn {
       margin-top: 2em;
       height: 46px;
@@ -348,6 +352,9 @@
       transition: box-shadow .2s;
       display: flex;
       align-items: center; }
+      @media (max-width: 575.98px) {
+        .landing__content__btn {
+          margin-top: 1em; } }
       .landing__content__btn--listen {
         background-color: black;
         margin-right: 1em;
