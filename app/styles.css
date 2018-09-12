@@ -315,14 +315,16 @@
     left: -10px;
     z-index: -1; }
   .landing__content {
-    text-align: center; }
+    text-align: center;
+    overflow-y: scroll;
+    padding: 1em; }
     .landing__content__img {
       max-width: 520px;
       width: 35vw;
       box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
       @media (max-width: 575.98px) {
         .landing__content__img {
-          width: 90%; } }
+          width: 100%; } }
     .landing__content__text {
       font-weight: 400;
       text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);

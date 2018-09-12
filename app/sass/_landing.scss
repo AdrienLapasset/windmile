@@ -23,7 +23,9 @@
   }
 
   &__content {
-    text-align: center;
+		text-align: center;
+		overflow-y: scroll;
+    padding: 1em;
 
     &__img {
       max-width: 520px;
@@ -31,7 +33,7 @@
       box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 
       @media (max-width: 575.98px) {
-        width: 90%;
+        width: 100%;
       }
     }
 
