@@ -98,10 +98,15 @@
     font-weight: 200;
     text-transform: none;
     transform: rotate(-90deg);
-    position: absolute;
+    position: fixed;
     left: -90px;
     bottom: 107px;
-    font-size: 11px;
+		font-size: 11px;
+		
+		@media (max-width: 767.98px) {
+			left: -97px;	
+			bottom: 95px;
+		}
 
     @-moz-document url-prefix() {
       left: -86px;
