@@ -100,6 +100,9 @@
       text-align: center;
       font-family: Zorus_Serif_Italic;
       text-transform: uppercase; }
+      @media (max-width: 767.98px) {
+        .home__windmile__title {
+          height: 160px; } }
       .home__windmile__title h1 {
         background: url("pictures/mask.jpg");
         -webkit-text-fill-color: transparent;

@@ -128,7 +128,11 @@
       height: 400px;
       text-align: center;
       font-family: Zorus_Serif_Italic;
-      text-transform: uppercase;
+			text-transform: uppercase;
+			
+			@media (max-width: 767.98px) {
+				height: 160px;
+			}
 
       h1 {
         background: url("pictures/mask.jpg");
