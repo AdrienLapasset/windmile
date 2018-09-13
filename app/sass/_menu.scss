@@ -9,9 +9,13 @@
   margin-right: -520px;
 
   @media (max-width: 767.98px) {
-    width: 100%;
+    width: 90%;
     margin: 0;
     display: flex;
+    position: fixed;
+    top: 0;
+    align-self: unset;
+    padding: 0 1em;
   }
 
   &__list {
@@ -22,6 +26,7 @@
     @media (max-width: 767.98px) {
       display: flex;
       flex-wrap: wrap;
+      width: 280px;
     }
 
     &.open {
@@ -35,8 +40,10 @@
     &__item {
       margin-bottom: 25px;
 
-      &:not(:last-child) {
-        @media (max-width: 767.98px) {
+      @media (max-width: 767.98px) {
+				margin-bottom: 15px;
+
+        &:not(:last-child) {
           margin-right: 1em;
         }
       }

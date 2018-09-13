@@ -31,7 +31,7 @@
   opacity: 1;
   transition: opacity 1s; }
   .home__newsletter {
-    z-index: 1;
+    z-index: 2;
     top: 0;
     transform: translateY(-100%);
     position: absolute;
@@ -77,8 +77,9 @@
     height: 100vh; }
     @media (max-width: 767.98px) {
       .home__container {
-        padding: 1em;
-        flex-direction: column-reverse; } }
+        padding: 2em;
+        flex-direction: column-reverse;
+        height: calc(100vh - 9.5em); } }
   .home__windmile {
     display: flex;
     justify-content: center;
@@ -195,9 +196,13 @@
   margin-right: -520px; }
   @media (max-width: 767.98px) {
     .menu {
-      width: 100%;
+      width: 90%;
       margin: 0;
-      display: flex; } }
+      display: flex;
+      position: fixed;
+      top: 0;
+      align-self: unset;
+      padding: 0 1em; } }
   .menu__list {
     list-style-type: none;
     font-size: 24px;
@@ -205,7 +210,8 @@
     @media (max-width: 767.98px) {
       .menu__list {
         display: flex;
-        flex-wrap: wrap; } }
+        flex-wrap: wrap;
+        width: 280px; } }
     .menu__list.open {
       animation: 1.5s cubic-bezier(0, 0, 0, 1) 0s 1 forwards fadein-top; }
     .menu__list.close {
@@ -213,8 +219,10 @@
     .menu__list__item {
       margin-bottom: 25px; }
       @media (max-width: 767.98px) {
-        .menu__list__item:not(:last-child) {
-          margin-right: 1em; } }
+        .menu__list__item {
+          margin-bottom: 15px; }
+          .menu__list__item:not(:last-child) {
+            margin-right: 1em; } }
       .menu__list__item a {
         text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
         transition: text-shadow .2s; }
@@ -259,7 +267,8 @@
 @media (max-width: 767.98px) {
   .menu__btn-container {
     position: absolute;
-    right: 0; } }
+    right: 10px;
+    margin-top: 20px; } }
 
 .menu__btn {
   width: 40px;
@@ -402,15 +411,15 @@
   @media (max-width: 767.98px) {
     .content {
       width: 100%;
-      height: 100%;
-      top: 130px; } }
+      top: 130px;
+      bottom: 2em; } }
   .content__bio {
     display: none;
     flex-direction: row-reverse; }
     @media (max-width: 767.98px) {
       .content__bio {
         flex-direction: column;
-        padding: 1em;
+        padding: 1em 2em;
         overflow-y: scroll; } }
     .content__bio__text-container {
       font-size: 14px;
@@ -418,7 +427,8 @@
       overflow-y: scroll; }
       @media (max-width: 767.98px) {
         .content__bio__text-container {
-          overflow-y: unset; } }
+          overflow-y: unset;
+          padding: 2em 1em; } }
     .content__bio__text {
       visibility: hidden;
       font-size: 14px;

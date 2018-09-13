@@ -40,7 +40,7 @@
 	transition: opacity 1s;
 
   &__newsletter {
-    z-index: 1;
+    z-index: 2;
     top: 0;
     transform: translateY(-100%);
     position: absolute;
@@ -103,8 +103,9 @@
 		height: 100vh;
 		
 		@media (max-width: 767.98px) {
-			padding: 1em;
+			padding: 2em;
 			flex-direction: column-reverse;
+			height: calc(100vh - 9.5em);
 		}
   }
 
