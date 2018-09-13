@@ -94,7 +94,7 @@
     @media (max-width: 767.98px) {
       .home__windmile {
         width: 90vw;
-        height: 90vh; } }
+        height: 72vh; } }
     .home__windmile__title {
       height: 400px;
       text-align: center;
@@ -419,15 +419,14 @@
   @media (max-width: 767.98px) {
     .content {
       width: 90vw;
-      height: 90vh;
+      height: 72vh;
       overflow-y: scroll; } }
   .content__bio {
     display: none;
     flex-direction: row-reverse; }
     @media (max-width: 767.98px) {
       .content__bio {
-        flex-direction: column;
-        padding-top: 90px; } }
+        flex-direction: column; } }
     .content__bio__text-container {
       font-size: 14px;
       padding: 5em;
