@@ -38,7 +38,15 @@
 			animation: 2s cubic-bezier(0, 0, 0, 1) 0s 1 forwards fadein-left;
 			animation-delay: .2s;
 			margin-bottom: 1em;
-    }
+		}
+		
+		&__btn {
+			margin-top: 2em;
+
+			& * {
+				margin-bottom: 1em;
+			}
+		}
 
     &__img {
       flex-basis: 45%;

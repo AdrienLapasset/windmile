@@ -445,6 +445,10 @@
       animation: 2s cubic-bezier(0, 0, 0, 1) 0s 1 forwards fadein-left;
       animation-delay: .2s;
       margin-bottom: 1em; }
+    .content__bio__btn {
+      margin-top: 2em; }
+      .content__bio__btn * {
+        margin-bottom: 1em; }
     .content__bio__img {
       flex-basis: 45%;
       flex-shrink: 0;
