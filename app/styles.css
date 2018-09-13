@@ -120,22 +120,21 @@
             letter-spacing: 5px; } }
       .home__windmile__title .shadow {
         position: relative;
-        top: -398px;
+        top: -414px;
         left: 13px;
         width: 434px; }
-
-@-moz-document url-prefix() {
-  .home__windmile__title .shadow {
-    top: -414px; } }
         @media (max-width: 767.98px) {
           .home__windmile__title .shadow {
-            top: -156px;
-            left: -3px;
-            width: 171px; }
-          @-moz-document url-prefix() {
-            .home__windmile__title .shadow {
-              top: -162px;
-              left: 8px; } } }
+            top: -162px;
+            left: 8px; } }
+      @media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+        .home__windmile__title .shadow {
+          top: -398px; } }
+  @media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) and (max-width: 767.98px) {
+    .home__windmile__title .shadow {
+      top: -156px;
+      left: -3px;
+      width: 171px; } }
   .home__darken {
     position: absolute;
     top: 0;

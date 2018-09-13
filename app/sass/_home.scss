@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-	display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -25,7 +25,7 @@
     opacity: 0;
     transition: opacity 2s ease-in;
 
-		@media (max-width: 767.98px) {
+    @media (max-width: 767.98px) {
       font-size: 40px;
       line-height: 40px;
       letter-spacing: 3px;
@@ -34,8 +34,8 @@
 }
 
 .home {
-	opacity: 0;
-	transition: opacity 1s;
+  opacity: 0;
+  transition: opacity 1s;
 
   &__newsletter {
     z-index: 2;
@@ -64,11 +64,11 @@
 
     &__text {
       font-size: 18px;
-			margin-right: 1em;
-			
-			@media (max-width: 767.98px) {
-				display: none;
-			}
+      margin-right: 1em;
+
+      @media (max-width: 767.98px) {
+        display: none;
+      }
     }
 
     &__cta {
@@ -98,11 +98,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-		height: 100vh;
-		
-		@media (max-width: 767.98px) {
-			flex-direction: column-reverse;
-		}
+    height: 100vh;
+
+    @media (max-width: 767.98px) {
+      flex-direction: column-reverse;
+    }
   }
 
   &__windmile {
@@ -117,12 +117,12 @@
     -webkit-box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.25);
     box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.25);
-		transition: opacity 2s;
-		
-		@media (max-width: 767.98px) {
-			width: 90vw;
-			height: 90vh;
-		}
+    transition: opacity 2s;
+
+    @media (max-width: 767.98px) {
+      width: 90vw;
+      height: 90vh;
+    }
 
     &__title {
       height: 400px;
@@ -144,7 +144,7 @@
         line-height: 204px;
         padding-right: 20px;
 
-				@media (max-width: 767.98px) {
+        @media (max-width: 767.98px) {
           font-size: 80px;
           line-height: 80px;
           letter-spacing: 5px;
@@ -153,23 +153,25 @@
 
       .shadow {
         position: relative;
-        top: -398px;
+        top: -414px;
         left: 13px;
         width: 434px;
 
-        // Firefox exception
-        @-moz-document url-prefix() {
-          top: -414px;
+        @media (max-width: 767.98px) {
+          top: -162px;
+          left: 8px;
         }
+      }
 
-				@media (max-width: 767.98px) {
-          top: -156px;
-          left: -3px;
-          width: 171px;
+      // Chrome only
+      @media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+        .shadow {
+          top: -398px;
 
-          @-moz-document url-prefix() {
-            top: -162px;
-            left: 8px;
+          @media (max-width: 767.98px) {
+            top: -156px;
+            left: -3px;
+            width: 171px;
           }
         }
       }
@@ -191,14 +193,13 @@
     position: relative;
     bottom: 8.5vh;
     display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 
-		@media (max-width: 767.98px) {
-			bottom: 4vh;
-		}
-		
+    @media (max-width: 767.98px) {
+      bottom: 4vh;
+    }
 
     &--show {
       visibility: hidden;
@@ -245,21 +246,21 @@
 
     &__link {
       &:not(:last-child) {
-				margin-right: 2em;
-				
-				@media (max-width: 767.98px) {
-					margin-right: 1em;
-				}
-			}
+        margin-right: 2em;
+
+        @media (max-width: 767.98px) {
+          margin-right: 1em;
+        }
+      }
     }
 
     &__icon {
       filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
-			transition: filter .2s;
-			
-			@media (max-width: 767.98px) {
-				width: 20px;
-			}
+      transition: filter .2s;
+
+      @media (max-width: 767.98px) {
+        width: 20px;
+      }
 
       &:hover {
         filter: none;
