@@ -6,9 +6,9 @@
 	overflow: hidden;
 
 	@media (max-width: 767.98px) {
-		width: 100%;
-		top: 130px;
-		bottom: 2em;
+		width: 90vw;
+		height: 90vh;
+		overflow-y: scroll;
 	}
 
   &__bio {
@@ -17,8 +17,7 @@
 
 		@media (max-width: 767.98px) {
 			flex-direction: column;
-			padding: 1em 2em;
-			overflow-y: scroll;
+			padding-top: 80px;
 		}
 
     &__text-container {
