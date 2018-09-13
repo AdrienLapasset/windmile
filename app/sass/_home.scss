@@ -194,11 +194,13 @@
     bottom: 8.5vh;
     display: flex;
 		justify-content: center;
-		
+		align-items: center;
+		flex-wrap: wrap;
+
 		@media (max-width: 767.98px) {
-			flex-wrap: wrap;
-			bottom: 0;
+			bottom: 4vh;
 		}
+		
 
     &--show {
       visibility: hidden;
@@ -245,17 +247,21 @@
 
     &__link {
       &:not(:last-child) {
-        margin-right: 2em;
-			}
-			
-			@media (max-width: 767.98px) {
-				margin-bottom: 1em;
+				margin-right: 2em;
+				
+				@media (max-width: 767.98px) {
+					margin-right: 1em;
+				}
 			}
     }
 
     &__icon {
       filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
-      transition: filter .2s;
+			transition: filter .2s;
+			
+			@media (max-width: 767.98px) {
+				width: 20px;
+			}
 
       &:hover {
         filter: none;
