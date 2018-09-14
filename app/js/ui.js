@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-	// Intro //
+	// Intro
 	var i = 0;
 	var letters = ['W', 'I1', 'N', 'D', 'M', 'I2', 'L', 'E'];
 
@@ -53,7 +53,7 @@ $(document).ready(function () {
 	}
 	showLetters();
 
-	// Movable Background //
+	// Movable Background
 	var mouseX;
 	var mouseY;
 	$(document).mousemove(function (e) {
@@ -62,10 +62,11 @@ $(document).ready(function () {
 		$('h1').css({ 'background-position': mouseX + "px " + mouseY + "px" });
 	});
 
-	// Open-Close button //
+	// Open-Close button
 	$('.menu__btn').click(function () {
 		$(this).toggleClass('open');
-		$('.content__bio').toggleClass('open');
+		$('.menu__bio').addClass('active');
+		$('.content__bio').css('display', 'flex');
 
 		// Menu
 		if ($('.menu__list').hasClass('open') || $('.menu__list').hasClass('close')) {
@@ -89,7 +90,10 @@ $(document).ready(function () {
 		}
 
 		// Close all pages
-		$('.content__bio').css('display', 'none');
+		if ($('.menu__list').hasClass('close')) {
+			$('.content__bio').css('display', 'none');
+			$('.menu__bio').removeClass('active');
+		}
 	});
 
 	// Pages
