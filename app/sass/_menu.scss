@@ -26,7 +26,8 @@
     @media (max-width: 767.98px) {
       display: flex;
       flex-wrap: wrap;
-      width: 280px;
+			width: 280px;
+			margin-top: 20px;
     }
 
     &.open {
