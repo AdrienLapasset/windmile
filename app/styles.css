@@ -125,8 +125,8 @@
         @media (max-width: 767.98px) {
           .home__windmile__title h1 {
             font-size: 80px;
-            line-height: 80px;
-            letter-spacing: 5px; } }
+            line-height: 78px;
+            letter-spacing: 4px; } }
       .home__windmile__title .shadow {
         position: relative;
         top: -414px;
@@ -134,15 +134,15 @@
         width: 434px; }
         @media (max-width: 767.98px) {
           .home__windmile__title .shadow {
-            top: -162px;
-            width: 172px;
-            left: -2px; } }
+            top: -159px;
+            width: 166px;
+            left: -1px; } }
       @media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
         .home__windmile__title .shadow {
           top: -398px; } }
   @media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) and (max-width: 767.98px) {
     .home__windmile__title .shadow {
-      top: -156px; } }
+      top: -153px; } }
   .home__darken {
     position: absolute;
     top: 0;
