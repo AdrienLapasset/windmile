@@ -419,6 +419,9 @@
         background-color: black;
         margin-right: 1em;
         display: flex; }
+        @media (max-width: 575.98px) {
+          .landing__content__btn--listen {
+            margin-right: 0; } }
         .landing__content__btn--listen__play {
           margin-left: .5em; }
       .landing__content__btn--visit {

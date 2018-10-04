@@ -81,7 +81,11 @@
       &--listen {
         background-color: black;
         margin-right: 1em;
-        display: flex;
+				display: flex;
+				
+				@media (max-width: 575.98px) {
+					margin-right: 0;
+				}
 
         &__play {
           margin-left: .5em;
