@@ -1,0 +1,49 @@
+.menu-button {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 2px solid black;
+	transition: 0.5s;
+	background: transparent;
+	z-index: 10;
+	position: relative;
+	top: 0px;
+	right: -70px;
+	float: right;
+	cursor: pointer;
+
+	&:before, &:after {
+		content: "";
+		display: block;
+		background: black;
+		position: absolute;
+	}
+
+	&:before {
+		width: 2px;
+		height: 30px;
+		top: 5px;
+		left: 19px;
+	}
+
+	&:after {
+		width: 30px;
+		height: 2px;
+		bottom: 19px;
+		left: 5px;
+	}
+
+	&.open {
+		border: 2px solid white;
+		transform: rotate(225deg);
+
+		&:before, &:after {
+			background: white;
+		}
+	}
+
+	@media only screen and (max-width: 640px) {
+		top: -22px;
+		right: -22px;
+	}
+}

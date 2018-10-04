@@ -1,0 +1,22 @@
+.underline {
+	position: relative;
+}
+.underline span {
+	pointer-events: none;
+
+}
+.underline canvas {
+	pointer-events: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-moz-user-select: none; 
+	-khtml-user-select: none; 
+	-webkit-user-select: none; 
+	-o-user-select: none; 
+	cursor: pointer;
+
+	@media only screen and (max-width: 640px) {
+		display: none;
+	}
+}

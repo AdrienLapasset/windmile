@@ -2,12 +2,10 @@
 @import "menu";
 @import "menu-button";
 @import "underline";
-@import "landing";
-@import "content";
 
 @font-face {
 	font-family: Zorus_Serif_Italic;
-	src: url('fonts/Zorus_Serif_Italic.otf');
+	src: url('../fonts/Zorus_Serif_Italic.otf');
 }
 
 * {
@@ -20,7 +18,8 @@
 }
 
 body {
-	font-family: 'Nunito', sans-serif;
+	font-family: Zorus_Serif_Italic;
+	text-transform: uppercase;
 	overflow: hidden;
 }
 
@@ -28,3 +27,5 @@ a {
 	text-decoration: none;
 	display: inline-block;
 }
+
+
