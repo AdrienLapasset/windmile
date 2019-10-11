@@ -137,12 +137,11 @@
             top: -159px;
             width: 166px;
             left: -1px; } }
-      @media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
-        .home__windmile__title .shadow {
-          top: -398px; } }
-  @media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) and (max-width: 767.98px) {
-    .home__windmile__title .shadow {
-      top: -153px; } }
+        .home__windmile__title .shadow.chrome {
+          top: -398px; }
+          @media (max-width: 767.98px) {
+            .home__windmile__title .shadow.chrome {
+              top: -153px; } }
   .home__darken {
     position: absolute;
     top: 0;

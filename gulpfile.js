@@ -7,22 +7,21 @@ gulp.task('browserSync', function() {
 	browserSync({
 		server: {
 			baseDir: 'app'
-		},
-	})
-})
+		}
+	});
+});
 
 // Sass compile
 gulp.task('sass', function() {
-	gulp.src('app/sass/styles.scss')
-	.pipe(sass().on('error', sass.logError))
-	.pipe(gulp.dest('app'))
-	.pipe(browserSync.reload({
-		stream: true
-	}))
+	gulp.src('app/sass/styles.scss').pipe(sass().on('error', sass.logError)).pipe(gulp.dest('app')).pipe(
+		browserSync.reload({
+			stream: true
+		})
+	);
 });
 
 //Watch task
-gulp.task('default', ['browserSync', 'sass'], function() {
-	gulp.watch('app/sass/**/*.scss',['sass']);
-	gulp.watch('app/**/*', browserSync.reload); 
+gulp.task('default', [ 'browserSync', 'sass' ], function() {
+	gulp.watch('app/sass/**/*.scss', [ 'sass' ]);
+	gulp.watch('app/**/*', browserSync.reload);
 });
